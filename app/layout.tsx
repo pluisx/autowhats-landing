@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://autowhats.com"),
+  metadataBase: new URL("https://autowhats.loomia.net"),
+  icons: {
+    icon: "/icon.svg",
+  },
   title: "Automatiza WhatsApp Business | Respuestas Automáticas 24/7 para tu Negocio",
   description: "Deja de perder clientes por no responder a tiempo. Configura mensajes automáticos en WhatsApp Business para salones, clínicas y restaurantes. Agenda tu demo gratis.",
   keywords: [
