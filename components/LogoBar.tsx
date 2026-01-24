@@ -1,0 +1,38 @@
+'use client';
+
+import { Calendar, Workflow, CalendarCheck, Database, Share2 } from 'lucide-react';
+
+const logos = [
+  { name: 'Google Calendar', icon: Calendar },
+  { name: 'HubSpot', icon: Workflow },
+  { name: 'Calendly', icon: CalendarCheck },
+  { name: 'Zoho', icon: Database },
+  { name: 'Meta', icon: Share2 },
+];
+
+export function LogoBar() {
+  return (
+    <section className="py-12 md:py-16 bg-gray-50 border-y border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="text-center text-gray-500 text-sm md:text-base mb-8">
+          Integra con las herramientas que ya usas
+        </p>
+
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          {logos.map((logo) => {
+            const Icon = logo.icon;
+            return (
+              <div
+                key={logo.name}
+                className="flex items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <Icon className="w-6 h-6 md:w-8 md:h-8" />
+                <span className="text-sm md:text-base font-medium">{logo.name}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}

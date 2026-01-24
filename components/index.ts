@@ -1,0 +1,12 @@
+export { Navbar } from './Navbar';
+export { Hero } from './Hero';
+export { LogoBar } from './LogoBar';
+export { ProblemSection } from './ProblemSection';
+export { ComparisonSection } from './ComparisonSection';
+export { BenefitsSection } from './BenefitsSection';
+export { HowItWorks } from './HowItWorks';
+export { UseCases } from './UseCases';
+export { Testimonials } from './Testimonials';
+export { FinalCTA } from './FinalCTA';
+export { Footer } from './Footer';
+export { WhatsAppButton } from './WhatsAppButton';
