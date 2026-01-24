@@ -1,13 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { MessageCircle, Instagram, Linkedin } from 'lucide-react';
-
-const WHATSAPP_NUMBER = 'TUNUMERO';
-const WHATSAPP_MESSAGE = 'Hola! Vi tu página y me interesa automatizar mi WhatsApp Business';
+import { MessageCircle } from 'lucide-react';
+import { getWhatsAppUrl } from '@/lib/config';
 
 export function Footer() {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const whatsappUrl = getWhatsAppUrl();
 
   return (
     <footer className="bg-gray-900 text-white py-12 md:py-16">
@@ -33,20 +31,6 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            <a
-              href="#"
-              className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
             <a
               href={whatsappUrl}
               target="_blank"
