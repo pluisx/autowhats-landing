@@ -1,12 +1,10 @@
 'use client';
 
 import { MessageCircle } from 'lucide-react';
-
-const WHATSAPP_NUMBER = 'TUNUMERO';
-const WHATSAPP_MESSAGE = 'Hola! Vi tu página y me interesa automatizar mi WhatsApp Business';
+import { getWhatsAppUrl } from '@/lib/config';
 
 export function WhatsAppButton() {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const whatsappUrl = getWhatsAppUrl();
 
   return (
     <a

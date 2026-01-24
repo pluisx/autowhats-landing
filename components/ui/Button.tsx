@@ -2,6 +2,7 @@
 
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { MessageCircle } from 'lucide-react';
+import { getWhatsAppUrl } from '@/lib/config';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'whatsapp' | 'outline' | 'white';
@@ -11,9 +12,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   showWhatsAppIcon?: boolean;
   href?: string;
 }
-
-const WHATSAPP_NUMBER = 'TUNUMERO';
-const WHATSAPP_MESSAGE = 'Hola! Vi tu página y me interesa automatizar mi WhatsApp Business';
 
 export function Button({
   variant = 'primary',
@@ -50,9 +48,8 @@ export function Button({
     </>
   );
 
-  if (href || variant === 'whatsapp') {
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
-    const finalHref = href || whatsappUrl;
+  if (href || showWhatsAppIcon || variant === 'whatsapp') {
+    const finalHref = href || getWhatsAppUrl();
 
     return (
       <a
