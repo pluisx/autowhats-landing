@@ -2,8 +2,8 @@
 export const CONFIG = {
   // WhatsApp Configuration
   whatsapp: {
-    number: 'TUNUMERO', // Replace with your WhatsApp Business number (include country code, e.g., 521234567890)
-    defaultMessage: 'Hola! Vi tu página y me interesa automatizar mi WhatsApp Business',
+    number: '17705899034',
+    defaultMessage: 'Hola, me gustaría saber más acerca de este bot de WhatsApp para negocios.',
   },
 
   // Business Information
