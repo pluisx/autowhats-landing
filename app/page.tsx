@@ -8,6 +8,7 @@ import {
   HowItWorks,
   UseCases,
   Testimonials,
+  FAQ,
   FinalCTA,
   Footer,
   WhatsAppButton,
@@ -25,6 +26,7 @@ export default function Home() {
       <HowItWorks />
       <UseCases />
       <Testimonials />
+      <FAQ />
       <FinalCTA />
       <Footer />
       <WhatsAppButton />
