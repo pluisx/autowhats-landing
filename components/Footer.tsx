@@ -43,8 +43,13 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
-          © 2026 AutoWhats. Todos los derechos reservados.
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p className="text-sm text-gray-500">
+            © 2026 AutoWhats. Todos los derechos reservados.
+          </p>
+          <p className="text-xs text-gray-600 mt-2">
+            AutoWhats is a product of Unity Ventures Innovations LLC
+          </p>
         </div>
       </div>
     </footer>

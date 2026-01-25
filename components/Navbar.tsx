@@ -3,9 +3,7 @@
 import { useState } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { Button } from './ui';
-
-const WHATSAPP_NUMBER = 'TUNUMERO';
-const WHATSAPP_MESSAGE = 'Hola! Vi tu página y me interesa automatizar mi WhatsApp Business';
+import { getWhatsAppUrl } from '@/lib/config';
 
 const navLinks = [
   { href: '#beneficios', label: 'Beneficios' },
@@ -17,7 +15,7 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const whatsappUrl = getWhatsAppUrl();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">

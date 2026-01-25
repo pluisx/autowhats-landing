@@ -9,8 +9,8 @@ export const CONFIG = {
   // Business Information
   business: {
     name: 'AutoWhats',
-    url: 'https://autowhats.com',
-    email: 'contacto@autowhats.com',
+    url: 'https://autowhats.unitvent.com',
+    email: 'info@unitvent.com',
   },
 
   // Social Media Links
