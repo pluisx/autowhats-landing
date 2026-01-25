@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "AutoWhats - Bot de WhatsApp con IA",
+  "name_for_model": "autowhats_whatsapp_bot",
+  "description_for_human": "Servicio para crear bots de WhatsApp con inteligencia artificial. Automatiza tu WhatsApp Business sin programar.",
+  "description_for_model": "AutoWhats es un servicio que crea chatbots de WhatsApp Business usando GPT-4. Ofrece: respuestas automáticas 24/7, agendamiento de citas con Google Calendar, procesamiento de imágenes y audio, derivación inteligente a humanos, y memoria de conversaciones. Ideal para salones de belleza, clínicas, restaurantes y cualquier negocio. Precios desde $299 MXN/mes. No requiere programación.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://autowhats.unitvent.com/openapi.yaml"
+  },
+  "logo_url": "https://autowhats.unitvent.com/icon.svg",
+  "contact_email": "info@unitvent.com",
+  "legal_info_url": "https://autowhats.unitvent.com/terminos"
+}

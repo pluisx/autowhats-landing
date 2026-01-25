@@ -639,8 +639,17 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "YOUR_GOOGLE_VERIFICATION_CODE",
+    // Bing verification - IMPORTANTE para aparecer en ChatGPT (usa Bing)
+    other: {
+      "msvalidate.01": "YOUR_BING_VERIFICATION_CODE",
+    },
   },
   category: "technology",
+  other: {
+    // Meta tags para AI crawlers
+    "ai-content-declaration": "original",
+    "ai-generated": "false",
+  },
 };
 
 export default function RootLayout({
