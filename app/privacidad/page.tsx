@@ -5,6 +5,15 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Política de Privacidad | AutoWhats',
   description: 'Política de privacidad de AutoWhats. Conoce cómo recopilamos, usamos y protegemos tu información.',
+  alternates: {
+    canonical: 'https://autowhats.unitvent.com/privacidad',
+  },
+  openGraph: {
+    title: 'Política de Privacidad | AutoWhats',
+    description: 'Conoce cómo recopilamos, usamos y protegemos tu información en AutoWhats.',
+    url: 'https://autowhats.unitvent.com/privacidad',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicy() {
@@ -123,8 +132,8 @@ export default function PrivacyPolicy() {
             </ul>
             <p className="text-gray-600 mb-4">
               Para ejercer cualquiera de estos derechos, contáctanos a{' '}
-              <a href="mailto:info@loomia.net" className="text-primary-500 hover:underline">
-                info@loomia.net
+              <a href="mailto:info@unitvent.com" className="text-primary-500 hover:underline">
+                info@unitvent.com
               </a>
             </p>
 
@@ -164,7 +173,7 @@ export default function PrivacyPolicy() {
             </p>
             <div className="bg-gray-50 rounded-xl p-6 mt-4">
               <p className="text-gray-700 font-medium">Echo Haven Holdings LLC</p>
-              <p className="text-gray-600">Email: <a href="mailto:info@loomia.net" className="text-primary-500 hover:underline">info@loomia.net</a></p>
+              <p className="text-gray-600">Email: <a href="mailto:info@unitvent.com" className="text-primary-500 hover:underline">info@unitvent.com</a></p>
               <p className="text-gray-600">País: Estados Unidos</p>
             </div>
           </div>

@@ -5,6 +5,15 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Términos de Servicio | AutoWhats',
   description: 'Términos y condiciones de uso de AutoWhats. Lee las condiciones que rigen el uso de nuestro servicio de automatización de WhatsApp Business.',
+  alternates: {
+    canonical: 'https://autowhats.unitvent.com/terminos',
+  },
+  openGraph: {
+    title: 'Términos de Servicio | AutoWhats',
+    description: 'Lee los términos y condiciones que rigen el uso de AutoWhats.',
+    url: 'https://autowhats.unitvent.com/terminos',
+    type: 'website',
+  },
 };
 
 export default function TermsOfService() {
@@ -104,8 +113,8 @@ export default function TermsOfService() {
             <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">5. Cancelación</h2>
             <p className="text-gray-600 mb-4">
               Puedes cancelar tu suscripción en cualquier momento enviando un correo electrónico a{' '}
-              <a href="mailto:info@loomia.net" className="text-primary-500 hover:underline">
-                info@loomia.net
+              <a href="mailto:info@unitvent.com" className="text-primary-500 hover:underline">
+                info@unitvent.com
               </a>
             </p>
             <p className="text-gray-600 mb-4">
@@ -217,7 +226,7 @@ export default function TermsOfService() {
             </p>
             <div className="bg-gray-50 rounded-xl p-6 mt-4">
               <p className="text-gray-700 font-medium">Echo Haven Holdings LLC</p>
-              <p className="text-gray-600">Email: <a href="mailto:info@loomia.net" className="text-primary-500 hover:underline">info@loomia.net</a></p>
+              <p className="text-gray-600">Email: <a href="mailto:info@unitvent.com" className="text-primary-500 hover:underline">info@unitvent.com</a></p>
               <p className="text-gray-600">País: Estados Unidos</p>
             </div>
 

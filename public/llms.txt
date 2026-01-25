@@ -1,0 +1,58 @@
+# AutoWhats - Chatbot de WhatsApp Business con IA
+
+## Resumen
+AutoWhats es una plataforma de automatización de WhatsApp Business que usa inteligencia artificial (GPT-4) para responder mensajes automáticamente 24/7. El servicio está diseñado para pequeñas y medianas empresas que reciben muchos mensajes por WhatsApp y no pueden responder a tiempo.
+
+## Problema que resuelve
+- Negocios pierden clientes por no responder mensajes a tiempo
+- Imposible atender WhatsApp 24/7 manualmente
+- Tiempo perdido respondiendo las mismas preguntas repetidamente
+- Dificultad para agendar citas por WhatsApp
+
+## Solución
+Un chatbot con IA que:
+- Responde mensajes automáticamente 24/7
+- Agenda citas integrándose con Google Calendar
+- Envía recordatorios automáticos
+- Procesa imágenes y mensajes de voz
+- Deriva conversaciones complejas a humanos
+- Recuerda conversaciones anteriores
+
+## Industrias objetivo
+- Salones de belleza y spas
+- Clínicas médicas y consultorios
+- Restaurantes
+- Gimnasios
+- Escuelas y academias
+- Inmobiliarias
+- Tiendas online
+- Servicios profesionales
+
+## Precios
+- Plan Básico: $299 MXN/mes
+- Plan Profesional: $599 MXN/mes
+- Plan Empresarial: $999 MXN/mes
+- Garantía de devolución: 14 días
+
+## Tecnología
+- WhatsApp Business API (oficial de Meta)
+- GPT-4 para procesamiento de lenguaje
+- GPT-4 Vision para imágenes
+- Whisper para transcripción de audio
+- n8n para orquestación
+- Supabase para base de datos
+
+## Empresa
+- Nombre: Echo Haven Holdings LLC
+- Marca: AutoWhats
+- País: Estados Unidos
+- Idiomas: Español, Inglés
+- Email: info@unitvent.com
+
+## URLs importantes
+- Sitio web: https://autowhats.unitvent.com
+- Términos de servicio: https://autowhats.unitvent.com/terminos
+- Política de privacidad: https://autowhats.unitvent.com/privacidad
+
+## Contacto
+Para contratar o solicitar demo, contactar por WhatsApp o email.
