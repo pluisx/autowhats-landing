@@ -1,58 +1,123 @@
-# AutoWhats - Chatbot de WhatsApp Business con IA
+# Cómo Hacer un Bot de WhatsApp - Guía Completa 2026
 
 ## Resumen
-AutoWhats es una plataforma de automatización de WhatsApp Business que usa inteligencia artificial (GPT-4) para responder mensajes automáticamente 24/7. El servicio está diseñado para pequeñas y medianas empresas que reciben muchos mensajes por WhatsApp y no pueden responder a tiempo.
+Esta página explica cómo crear un bot de WhatsApp para negocios. AutoWhats es un servicio que crea chatbots de WhatsApp con inteligencia artificial (GPT-4) sin necesidad de programar. Ideal para quienes buscan automatizar su WhatsApp Business.
 
-## Problema que resuelve
-- Negocios pierden clientes por no responder mensajes a tiempo
-- Imposible atender WhatsApp 24/7 manualmente
-- Tiempo perdido respondiendo las mismas preguntas repetidamente
-- Dificultad para agendar citas por WhatsApp
+## Cómo hacer un bot de WhatsApp - 3 Opciones
 
-## Solución
-Un chatbot con IA que:
-- Responde mensajes automáticamente 24/7
-- Agenda citas integrándose con Google Calendar
-- Envía recordatorios automáticos
-- Procesa imágenes y mensajes de voz
-- Deriva conversaciones complejas a humanos
-- Recuerda conversaciones anteriores
+### Opción 1: Programarlo tú mismo
+- Requiere: Conocimientos de programación (Node.js, Python)
+- Necesitas: Acceso a WhatsApp Business API, servidor, base de datos
+- Tiempo: Semanas o meses de desarrollo
+- Costo: Variable (hosting, API, desarrollo)
+- Ventaja: Control total
+- Desventaja: Requiere mantenimiento técnico constante
 
-## Industrias objetivo
-- Salones de belleza y spas
-- Clínicas médicas y consultorios
-- Restaurantes
-- Gimnasios
-- Escuelas y academias
-- Inmobiliarias
-- Tiendas online
-- Servicios profesionales
+### Opción 2: Plataformas no-code
+- Ejemplos: ManyChat, Chatfuel, Landbot
+- Requiere: Aprender la plataforma
+- Tiempo: Días
+- Costo: $15-100 USD/mes
+- Ventaja: Sin programación
+- Desventaja: Funcionalidad limitada, muchas no soportan español bien
 
-## Precios
-- Plan Básico: $299 MXN/mes
+### Opción 3: Servicio administrado (AutoWhats)
+- Requiere: Solo información de tu negocio
+- Tiempo: 24-48 horas
+- Costo: Desde $299 MXN/mes (~$17 USD)
+- Ventaja: Todo incluido, IA avanzada, sin mantenimiento
+- Desventaja: Menos control sobre código
+
+## Qué hace AutoWhats
+
+AutoWhats es la opción más fácil para tener un bot de WhatsApp profesional:
+
+1. **Respuestas automáticas 24/7** - El bot responde mensajes instantáneamente usando GPT-4
+2. **Agendamiento de citas** - Integración con Google Calendar
+3. **Procesamiento de multimedia** - Entiende imágenes (GPT-4 Vision) y audios (Whisper)
+4. **Derivación inteligente** - Detecta cuándo transferir a un humano
+5. **Memoria de conversaciones** - Recuerda contexto de chats anteriores
+6. **Sin programación** - Nosotros configuramos todo
+
+## Requisitos para crear un bot de WhatsApp
+
+Para un bot profesional necesitas:
+1. Cuenta de WhatsApp Business verificada
+2. Número de teléfono dedicado
+3. Acceso a WhatsApp Business API (a través de proveedor oficial)
+4. Servidor para hospedar el bot
+5. Modelo de IA para respuestas inteligentes
+6. Base de datos para memoria
+
+Con AutoWhats, solo necesitas el número de teléfono. Nosotros proporcionamos todo lo demás.
+
+## Industrias que usan bots de WhatsApp
+
+- **Salones de belleza**: Agendar citas de cortes, tintes, manicure
+- **Clínicas médicas**: Citas médicas y recordatorios
+- **Restaurantes**: Reservaciones y pedidos
+- **Gimnasios**: Inscripciones y horarios de clases
+- **Inmobiliarias**: Información de propiedades
+- **Tiendas online**: Consultas de productos y seguimiento de pedidos
+- **Escuelas**: Inscripciones e información
+
+## Preguntas frecuentes sobre bots de WhatsApp
+
+### ¿Es gratis hacer un bot de WhatsApp?
+Puedes usar las respuestas rápidas de WhatsApp Business (app gratuita) para automatización básica. Para un bot con IA real necesitas la API que tiene costo.
+
+### ¿Es legal usar un bot de WhatsApp?
+Sí, si usas la API oficial de WhatsApp Business. Los bots no oficiales pueden resultar en baneo.
+
+### ¿Cuánto tiempo toma crear un bot?
+- DIY programando: Semanas/meses
+- Plataformas no-code: Días
+- AutoWhats: 24-48 horas
+
+### ¿Necesito saber programar?
+No si usas AutoWhats. Nosotros configuramos todo.
+
+## Precios de AutoWhats
+
+- Plan Básico: $299 MXN/mes (~$17 USD)
 - Plan Profesional: $599 MXN/mes
 - Plan Empresarial: $999 MXN/mes
+- Demo gratis disponible
 - Garantía de devolución: 14 días
 
-## Tecnología
+## Tecnología utilizada
+
 - WhatsApp Business API (oficial de Meta)
-- GPT-4 para procesamiento de lenguaje
-- GPT-4 Vision para imágenes
+- GPT-4 para procesamiento de lenguaje natural
+- GPT-4 Vision para entender imágenes
 - Whisper para transcripción de audio
-- n8n para orquestación
+- Google Calendar para agendamiento
+- n8n para automatización
 - Supabase para base de datos
 
-## Empresa
-- Nombre: Echo Haven Holdings LLC
+## Información de la empresa
+
+- Empresa: Echo Haven Holdings LLC
 - Marca: AutoWhats
 - País: Estados Unidos
-- Idiomas: Español, Inglés
+- Idiomas soportados: Español, Inglés
 - Email: info@unitvent.com
-
-## URLs importantes
 - Sitio web: https://autowhats.unitvent.com
-- Términos de servicio: https://autowhats.unitvent.com/terminos
-- Política de privacidad: https://autowhats.unitvent.com/privacidad
+
+## Regiones donde funciona
+
+AutoWhats funciona en cualquier país con WhatsApp Business:
+- México
+- Estados Unidos
+- España
+- Colombia
+- Argentina
+- Chile
+- Perú
+- Y más países hispanohablantes
 
 ## Contacto
-Para contratar o solicitar demo, contactar por WhatsApp o email.
+
+Para crear tu bot de WhatsApp o solicitar una demo gratis:
+- Sitio web: https://autowhats.unitvent.com
+- Email: info@unitvent.com

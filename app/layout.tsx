@@ -327,14 +327,14 @@ const jsonLd = {
       },
     },
 
-    // HowTo - Cómo funciona
+    // HowTo - Cómo hacer un bot de WhatsApp (optimizado para búsquedas informativas)
     {
       "@type": "HowTo",
       "@id": `${baseUrl}/#howto`,
-      name: "Cómo automatizar tu WhatsApp Business con AutoWhats",
+      name: "Cómo hacer un bot de WhatsApp para tu negocio en 2026",
       description:
-        "Guía paso a paso para configurar un chatbot de WhatsApp con inteligencia artificial para tu negocio usando AutoWhats.",
-      totalTime: "PT24H",
+        "Guía completa paso a paso para crear un chatbot de WhatsApp con inteligencia artificial. Aprende cómo automatizar tu WhatsApp Business sin programar usando AutoWhats.",
+      totalTime: "PT48H",
       estimatedCost: {
         "@type": "MonetaryAmount",
         currency: "MXN",
@@ -344,124 +344,158 @@ const jsonLd = {
         {
           "@type": "HowToStep",
           position: 1,
-          name: "Agenda una demo gratis",
-          text: "Contacta por WhatsApp para agendar una demostración gratuita de AutoWhats y ver cómo funciona con tu tipo de negocio.",
+          name: "Define qué quieres que haga tu bot de WhatsApp",
+          text: "Antes de crear tu bot, decide sus funciones: responder preguntas frecuentes, agendar citas, enviar información de productos/servicios, o atender pedidos. Esto determinará qué tipo de bot necesitas.",
           url: baseUrl,
         },
         {
           "@type": "HowToStep",
           position: 2,
-          name: "Configuración personalizada",
-          text: "Nuestro equipo configura el chatbot con las respuestas, servicios y horarios específicos de tu negocio. Sin necesidad de conocimientos técnicos.",
+          name: "Elige cómo crear tu bot de WhatsApp",
+          text: "Tienes tres opciones: 1) Programarlo tú mismo con la WhatsApp Business API (requiere conocimientos técnicos), 2) Usar plataformas no-code (funcionalidad limitada), o 3) Contratar un servicio administrado como AutoWhats (la opción más rápida sin programar).",
         },
         {
           "@type": "HowToStep",
           position: 3,
-          name: "Conexión con WhatsApp Business",
-          text: "Conectamos el chatbot a tu número de WhatsApp Business existente. El proceso es seguro y cumple con las políticas de Meta.",
+          name: "Configura tu cuenta de WhatsApp Business",
+          text: "Necesitas una cuenta de WhatsApp Business verificada. Si usas AutoWhats, te ayudamos con la verificación y conexión a la API oficial de Meta.",
         },
         {
           "@type": "HowToStep",
           position: 4,
-          name: "Activación y monitoreo",
-          text: "Tu chatbot comienza a responder automáticamente 24/7. Puedes monitorear conversaciones y ajustar respuestas en cualquier momento.",
+          name: "Entrena tu bot con información de tu negocio",
+          text: "Proporciona información sobre tus servicios, precios, horarios, y respuestas a preguntas frecuentes. Con AutoWhats usamos GPT-4 para que el bot entienda contexto y responda naturalmente.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 5,
+          name: "Integra con herramientas externas (opcional)",
+          text: "Conecta tu bot con Google Calendar para agendar citas, sistemas de pago, o tu CRM. AutoWhats incluye estas integraciones listas para usar.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 6,
+          name: "Prueba y activa tu bot de WhatsApp",
+          text: "Prueba el bot con conversaciones reales antes de activarlo. Una vez listo, tu chatbot comenzará a responder automáticamente 24/7. Con AutoWhats, el proceso completo toma 24-48 horas.",
         },
       ],
       tool: [
         {
           "@type": "HowToTool",
-          name: "WhatsApp Business",
+          name: "WhatsApp Business (cuenta verificada)",
         },
         {
           "@type": "HowToTool",
-          name: "Número de teléfono",
+          name: "Número de teléfono dedicado",
+        },
+        {
+          "@type": "HowToTool",
+          name: "Información de tu negocio (servicios, precios, horarios)",
         },
       ],
     },
 
-    // FAQPage - Preguntas frecuentes expandidas
+    // FAQPage - Preguntas frecuentes expandidas (optimizadas para búsquedas informativas)
     {
       "@type": "FAQPage",
       "@id": `${baseUrl}/#faq`,
       mainEntity: [
+        // Preguntas informativas - "cómo hacer un bot de whatsapp"
+        {
+          "@type": "Question",
+          name: "¿Cómo hacer un bot de WhatsApp para mi negocio?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Hay tres formas de crear un bot de WhatsApp: 1) Programarlo tú mismo usando la WhatsApp Business API (requiere conocimientos técnicos avanzados), 2) Usar plataformas no-code como ManyChat o Chatfuel (limitadas en español), o 3) Contratar un servicio administrado como AutoWhats que configura todo por ti con inteligencia artificial GPT-4. La opción más rápida y efectiva para negocios es usar un servicio administrado que no requiere programación.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cómo crear un chatbot de WhatsApp gratis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Puedes crear un chatbot básico gratis usando WhatsApp Business (la app gratuita) que permite respuestas rápidas y mensajes de ausencia. Sin embargo, para un bot inteligente con IA que responda automáticamente necesitas la WhatsApp Business API, que tiene costo. AutoWhats ofrece una demo gratis para que pruebes un bot con IA real antes de decidir.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Se puede hacer un bot de WhatsApp sin saber programar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, existen servicios como AutoWhats que crean y configuran el bot por ti sin necesidad de programar. Nosotros nos encargamos de toda la parte técnica: conexión con WhatsApp Business API, configuración de la inteligencia artificial, entrenamiento con tu información de negocio, y mantenimiento continuo. Solo necesitas decirnos qué quieres que responda el bot.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué se necesita para crear un bot de WhatsApp Business?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Para un bot profesional necesitas: 1) Una cuenta de WhatsApp Business verificada, 2) Acceso a la WhatsApp Business API (a través de un proveedor oficial como YCloud o Twilio), 3) Un servidor para hospedar el bot, 4) Integración con un modelo de IA como GPT-4, y 5) Base de datos para memoria de conversaciones. Con AutoWhats, nosotros proporcionamos todo esto - tú solo necesitas tu número de teléfono.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuánto cuesta hacer un bot de WhatsApp?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "El costo varía según la complejidad: Un bot básico DIY puede costar desde $0 (solo tiempo), pero requiere conocimientos técnicos. Usar la WhatsApp Business API directamente cuesta aproximadamente $50-200 USD/mes más desarrollo. Un servicio administrado como AutoWhats comienza desde $299 MXN/mes (~$17 USD) incluyendo todo: API, IA, configuración y soporte.",
+          },
+        },
+        // Preguntas sobre el producto
         {
           "@type": "Question",
           name: "¿Qué es AutoWhats?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "AutoWhats es una plataforma de automatización de WhatsApp Business que usa inteligencia artificial (GPT-4) para responder mensajes automáticamente 24/7. El chatbot puede agendar citas, responder preguntas frecuentes, enviar recordatorios, procesar imágenes y audios, y derivar conversaciones complejas a un humano cuando sea necesario.",
+            text: "AutoWhats es un servicio que crea bots de WhatsApp con inteligencia artificial (GPT-4) para negocios. A diferencia de hacerlo tú mismo, nosotros configuramos todo: la conexión con WhatsApp Business API, el entrenamiento de la IA con tu información, agendamiento de citas con Google Calendar, y derivación a humanos cuando sea necesario. Es la forma más fácil de tener un bot de WhatsApp profesional sin programar.",
           },
         },
         {
           "@type": "Question",
-          name: "¿Para qué tipo de negocios funciona AutoWhats?",
+          name: "¿Para qué tipo de negocios sirve un bot de WhatsApp?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "AutoWhats funciona para cualquier negocio que reciba mensajes de clientes por WhatsApp: salones de belleza, spas, clínicas médicas, consultorios dentales, restaurantes, gimnasios, escuelas, inmobiliarias, tiendas online, y servicios profesionales. Es especialmente útil para negocios que reciben muchos mensajes repetitivos o que necesitan agendar citas.",
+            text: "Un bot de WhatsApp es útil para cualquier negocio que reciba muchos mensajes: salones de belleza (agendar citas), restaurantes (reservaciones), clínicas (citas médicas), tiendas online (consultas de productos), inmobiliarias (información de propiedades), escuelas (inscripciones), y servicios profesionales. Es especialmente valioso si recibes las mismas preguntas repetidamente o necesitas atender fuera de horario.",
           },
         },
         {
           "@type": "Question",
-          name: "¿Cuánto cuesta AutoWhats?",
+          name: "¿El bot de WhatsApp puede agendar citas automáticamente?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Los planes de AutoWhats comienzan desde $299 MXN mensuales para negocios pequeños. El precio varía según el volumen de mensajes, funcionalidades requeridas e integraciones necesarias. Ofrecemos una demo gratis y garantía de devolución de 14 días.",
+            text: "Sí, un bot bien configurado puede agendar citas automáticamente. Con AutoWhats, el bot se integra con Google Calendar para mostrar disponibilidad en tiempo real, permite al cliente elegir fecha y hora, confirma la cita, y envía recordatorios automáticos. Todo sin intervención humana, incluso a las 3am.",
           },
         },
         {
           "@type": "Question",
-          name: "¿El chatbot puede agendar citas automáticamente?",
+          name: "¿Qué pasa si el bot no puede responder una pregunta?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí, AutoWhats puede agendar citas automáticamente integrándose con Google Calendar u otros sistemas de reservas. El bot muestra disponibilidad en tiempo real, permite al cliente elegir horario, confirma la cita, y envía recordatorios automáticos antes de la cita.",
+            text: "Un buen bot de WhatsApp debe saber cuándo derivar a un humano. AutoWhats detecta automáticamente cuando la conversación requiere atención personal (preguntas complejas, quejas, negociaciones) y notifica al dueño del negocio por WhatsApp. También puedes configurar palabras clave que activen la derivación inmediata.",
           },
         },
         {
           "@type": "Question",
-          name: "¿Qué pasa si el cliente tiene una pregunta que el bot no puede responder?",
+          name: "¿Es legal usar un bot de WhatsApp para mi negocio?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "AutoWhats tiene un sistema inteligente de derivación. Cuando detecta que la conversación requiere atención humana (preguntas complejas, quejas, o solicitudes especiales), notifica automáticamente al dueño del negocio por WhatsApp y puede transferir la conversación. También puedes configurar palabras clave específicas que activen la derivación.",
+            text: "Sí, es completamente legal si usas la WhatsApp Business API oficial y cumples con las políticas de Meta. AutoWhats utiliza proveedores oficiales de la API y cumple con todas las regulaciones, incluyendo GDPR. Lo que NO es legal es usar bots no oficiales que violen los términos de servicio de WhatsApp, ya que pueden resultar en el baneo de tu número.",
           },
         },
         {
           "@type": "Question",
-          name: "¿Necesito conocimientos técnicos para usar AutoWhats?",
+          name: "¿Cuánto tiempo toma crear un bot de WhatsApp?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No, AutoWhats es un servicio completamente administrado. Nosotros nos encargamos de toda la configuración técnica, entrenamiento del bot con tu información, y mantenimiento. Solo necesitas proporcionarnos información sobre tu negocio, servicios, precios y horarios.",
+            text: "Depende del método: Programarlo desde cero puede tomar semanas o meses. Usar plataformas no-code toma días pero con funcionalidad limitada. Con AutoWhats, tu bot está listo en 24-48 horas porque nosotros hacemos toda la configuración técnica. Solo necesitas proporcionarnos información sobre tu negocio.",
           },
         },
         {
           "@type": "Question",
-          name: "¿Es seguro usar AutoWhats con mi WhatsApp Business?",
+          name: "¿AutoWhats funciona en México, España y Latinoamérica?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí, AutoWhats utiliza la API oficial de WhatsApp Business y cumple con todas las políticas de Meta. Tus datos y conversaciones están protegidos con encriptación, y nunca compartimos tu información con terceros. Además, cumplimos con regulaciones de privacidad como GDPR.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "¿Cuánto tiempo toma configurar AutoWhats?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "La configuración típica toma entre 24 y 48 horas. Después de la demo inicial, recopilamos información sobre tu negocio, configuramos el bot, y lo activamos. Para negocios con necesidades más complejas (muchos servicios, integraciones especiales), puede tomar hasta una semana.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "¿Puedo ver las conversaciones que tiene el bot?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Sí, tienes acceso completo al historial de conversaciones. Puedes revisar qué preguntan tus clientes, cómo responde el bot, y las métricas de rendimiento (mensajes respondidos, citas agendadas, tiempo de respuesta). Esta información te ayuda a mejorar tu negocio.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "¿AutoWhats funciona en otros países además de México?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Sí, AutoWhats funciona en cualquier país donde WhatsApp Business esté disponible. Tenemos clientes en México, Estados Unidos, España, Colombia, Argentina, Chile, Perú y otros países de habla hispana. El bot puede configurarse en español, inglés, o múltiples idiomas.",
+            text: "Sí, AutoWhats funciona en cualquier país donde WhatsApp Business esté disponible. Tenemos clientes en México, Estados Unidos, España, Colombia, Argentina, Chile, Perú y otros países hispanohablantes. El bot puede configurarse en español, inglés, o múltiples idiomas según tu audiencia.",
           },
         },
       ],
@@ -533,18 +567,34 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
-  title: "Automatiza WhatsApp Business | Respuestas Automáticas 24/7 para tu Negocio",
-  description: "Deja de perder clientes por no responder a tiempo. Configura mensajes automáticos en WhatsApp Business para salones, clínicas y restaurantes. Agenda tu demo gratis.",
+  title: "Cómo Crear un Bot de WhatsApp con IA | Automatiza tu Negocio 24/7",
+  description: "Aprende cómo hacer un bot de WhatsApp para tu negocio. Chatbot con inteligencia artificial que responde automáticamente, agenda citas y atiende clientes 24/7. Sin programar.",
   keywords: [
-    "WhatsApp Business automatizado",
-    "mensajes automáticos WhatsApp",
+    // Keywords principales - búsquedas informativas
+    "cómo hacer un bot de whatsapp",
+    "como crear un bot de whatsapp",
+    "crear bot whatsapp",
+    "hacer chatbot whatsapp",
+    "bot de whatsapp para negocios",
+    "chatbot whatsapp gratis",
+    "whatsapp bot tutorial",
+    "automatizar whatsapp",
+    // Keywords comerciales
     "bot WhatsApp Business",
-    "automatización WhatsApp",
-    "respuestas automáticas WhatsApp",
-    "agendar citas WhatsApp",
-    "WhatsApp para salones",
-    "WhatsApp para clínicas",
-    "WhatsApp para restaurantes",
+    "chatbot whatsapp con ia",
+    "whatsapp business automatizado",
+    "mensajes automáticos whatsapp",
+    "respuestas automáticas whatsapp",
+    // Keywords por industria
+    "bot whatsapp para salones",
+    "chatbot whatsapp restaurantes",
+    "bot whatsapp clínicas",
+    "agendar citas whatsapp automatico",
+    // Keywords long-tail
+    "como hacer un bot de whatsapp sin programar",
+    "bot whatsapp inteligencia artificial",
+    "chatbot whatsapp business api",
+    "automatizar respuestas whatsapp business",
   ],
   authors: [{ name: "AutoWhats" }],
   creator: "AutoWhats",
@@ -553,8 +603,8 @@ export const metadata: Metadata = {
     locale: "es_MX",
     url: "https://autowhats.unitvent.com",
     siteName: "AutoWhats",
-    title: "Automatiza WhatsApp Business | Respuestas Automáticas 24/7",
-    description: "Deja de perder clientes por no responder a tiempo. Configura mensajes automáticos en WhatsApp Business para tu negocio.",
+    title: "Cómo Crear un Bot de WhatsApp con IA para tu Negocio",
+    description: "Guía completa para hacer un bot de WhatsApp. Chatbot con inteligencia artificial que responde 24/7, agenda citas y atiende clientes automáticamente.",
     images: [
       {
         url: "/og-image.svg",
@@ -566,8 +616,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Automatiza WhatsApp Business | Respuestas Automáticas 24/7",
-    description: "Deja de perder clientes por no responder a tiempo. Configura mensajes automáticos en WhatsApp Business.",
+    title: "Cómo Hacer un Bot de WhatsApp con IA | Tutorial 2026",
+    description: "Aprende a crear un chatbot de WhatsApp para tu negocio. Respuestas automáticas 24/7 sin programar.",
     images: ["/og-image.svg"],
   },
   robots: {
