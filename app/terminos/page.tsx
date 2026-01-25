@@ -89,7 +89,7 @@ export default function TermsOfService() {
             <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-3">4.1 Tarifas</h3>
             <p className="text-gray-600 mb-4">
               Los precios de nuestros servicios se comunican antes de la contratación.
-              Los planes comienzan desde $299 MXN mensuales. Las tarifas pueden variar
+              Los planes comienzan desde $299 USD mensuales. Las tarifas pueden variar
               según el plan seleccionado y las funcionalidades incluidas.
             </p>
 

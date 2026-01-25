@@ -12,7 +12,7 @@ const faqs = [
   {
     question: '¿Cuánto cuesta el servicio?',
     answer:
-      'Los planes comienzan desde $299 MXN al mes (aproximadamente $17 USD). El precio incluye la API de WhatsApp Business, el modelo de IA GPT-4, configuración inicial, y soporte técnico. Ofrecemos una demo gratuita para que veas cómo funciona antes de decidir.',
+      'Los planes comienzan desde $299 USD al mes. El precio incluye la API de WhatsApp Business, el modelo de IA GPT-4, configuración inicial, y soporte técnico. Ofrecemos una demo gratuita para que veas cómo funciona antes de decidir.',
   },
   {
     question: '¿Cuánto tiempo toma tener mi bot funcionando?',

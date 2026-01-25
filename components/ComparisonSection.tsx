@@ -12,7 +12,7 @@ const manualData = [
 const automatedData = [
   { metric: 'Tiempo de respuesta', value: 'Instantáneo (<1 seg)', icon: Zap },
   { metric: 'Disponibilidad', value: '24/7 incluso fines de semana', icon: Calendar },
-  { metric: 'Costo mensual', value: 'Desde $299/mes', icon: DollarSign },
+  { metric: 'Costo mensual', value: 'Desde $299 USD/mes', icon: DollarSign },
   { metric: 'Leads perdidos', value: '0% (nunca pierdes un mensaje)', icon: Users },
 ];
 

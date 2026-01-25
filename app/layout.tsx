@@ -149,7 +149,7 @@ const jsonLd = {
         "@type": "AggregateOffer",
         lowPrice: "299",
         highPrice: "999",
-        priceCurrency: "MXN",
+        priceCurrency: "USD",
         priceValidUntil: "2026-12-31",
         availability: "https://schema.org/InStock",
         offerCount: 3,
@@ -158,7 +158,7 @@ const jsonLd = {
             "@type": "Offer",
             name: "Plan Básico",
             price: "299",
-            priceCurrency: "MXN",
+            priceCurrency: "USD",
             description: "Ideal para negocios pequeños con bajo volumen de mensajes",
             priceValidUntil: "2026-12-31",
           },
@@ -166,7 +166,7 @@ const jsonLd = {
             "@type": "Offer",
             name: "Plan Profesional",
             price: "599",
-            priceCurrency: "MXN",
+            priceCurrency: "USD",
             description: "Para negocios en crecimiento con múltiples servicios",
             priceValidUntil: "2026-12-31",
           },
@@ -174,7 +174,7 @@ const jsonLd = {
             "@type": "Offer",
             name: "Plan Empresarial",
             price: "999",
-            priceCurrency: "MXN",
+            priceCurrency: "USD",
             description: "Solución completa con integraciones avanzadas",
             priceValidUntil: "2026-12-31",
           },
@@ -317,7 +317,7 @@ const jsonLd = {
       offers: {
         "@type": "Offer",
         url: baseUrl,
-        priceCurrency: "MXN",
+        priceCurrency: "USD",
         price: "299",
         priceValidUntil: "2026-12-31",
         availability: "https://schema.org/InStock",
@@ -337,7 +337,7 @@ const jsonLd = {
       totalTime: "PT48H",
       estimatedCost: {
         "@type": "MonetaryAmount",
-        currency: "MXN",
+        currency: "USD",
         value: "299",
       },
       step: [
@@ -438,7 +438,7 @@ const jsonLd = {
           name: "¿Cuánto cuesta hacer un bot de WhatsApp?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "El costo varía según la complejidad: Un bot básico DIY puede costar desde $0 (solo tiempo), pero requiere conocimientos técnicos. Usar la WhatsApp Business API directamente cuesta aproximadamente $50-200 USD/mes más desarrollo. Un servicio administrado como AutoWhats comienza desde $299 MXN/mes (~$17 USD) incluyendo todo: API, IA, configuración y soporte.",
+            text: "El costo varía según la complejidad: Un bot básico DIY puede costar desde $0 (solo tiempo), pero requiere conocimientos técnicos. Usar la WhatsApp Business API directamente cuesta aproximadamente $50-200 USD/mes más desarrollo. Un servicio administrado como AutoWhats comienza desde $299 USD/mes incluyendo todo: API, IA, configuración y soporte.",
           },
         },
         // Preguntas sobre el producto

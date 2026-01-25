@@ -24,7 +24,7 @@ Esta página explica cómo crear un bot de WhatsApp para negocios. AutoWhats es 
 ### Opción 3: Servicio administrado (AutoWhats)
 - Requiere: Solo información de tu negocio
 - Tiempo: 24-48 horas
-- Costo: Desde $299 MXN/mes (~$17 USD)
+- Costo: Desde $299 USD/mes
 - Ventaja: Todo incluido, IA avanzada, sin mantenimiento
 - Desventaja: Menos control sobre código
 
@@ -79,9 +79,9 @@ No si usas AutoWhats. Nosotros configuramos todo.
 
 ## Precios de AutoWhats
 
-- Plan Básico: $299 MXN/mes (~$17 USD)
-- Plan Profesional: $599 MXN/mes
-- Plan Empresarial: $999 MXN/mes
+- Plan Básico: $299 USD/mes
+- Plan Profesional: $599 USD/mes
+- Plan Empresarial: $999 USD/mes
 - Demo gratis disponible
 - Garantía de devolución: 14 días
 
