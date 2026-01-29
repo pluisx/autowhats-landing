@@ -4,6 +4,7 @@ import {
   LogoBar,
   ProblemSection,
   ComparisonSection,
+  PricingDetails,
   BenefitsSection,
   HowItWorks,
   UseCases,
@@ -22,6 +23,7 @@ export default function Home() {
       <LogoBar />
       <ProblemSection />
       <ComparisonSection />
+      <PricingDetails />
       <BenefitsSection />
       <HowItWorks />
       <UseCases />

@@ -13,7 +13,7 @@ const automatedData = [
   { metric: 'Tiempo de respuesta', value: 'Instantáneo (<1 seg)', icon: Zap },
   { metric: 'Disponibilidad', value: '24/7 incluso fines de semana', icon: Calendar },
   { metric: 'Costo mensual', value: 'Desde $299 USD/mes', icon: DollarSign },
-  { metric: 'Leads perdidos', value: '0% (nunca pierdes un mensaje)', icon: Users },
+  { metric: 'Leads perdidos', value: 'Responde cada mensaje al instante', icon: Users },
 ];
 
 export function ComparisonSection() {
@@ -87,7 +87,7 @@ export function ComparisonSection() {
           <div className="bg-gradient-to-r from-whatsapp to-whatsapp-dark rounded-2xl px-6 py-5 flex items-center justify-center gap-3 text-white">
             <Sparkles className="w-6 h-6" />
             <span className="text-lg md:text-xl font-semibold">
-              Ahorra más de $4,000/mes en personal
+              Ahorra miles al mes vs contratar personal
             </span>
           </div>
         </div>

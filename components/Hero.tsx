@@ -1,6 +1,6 @@
 'use client';
 
-import { MessageCircle, Zap, TrendingUp, CheckCircle } from 'lucide-react';
+import { MessageCircle, Zap, TrendingUp, CheckCircle, Gift } from 'lucide-react';
 import { Button, Badge } from './ui';
 
 export function Hero() {
@@ -25,17 +25,44 @@ export function Hero() {
               duermes.
             </p>
 
+            {/* Pricing Badge */}
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-semibold text-sm md:text-base">
+                Desde $299/mes · Mes a mes
+              </span>
+              <span className="bg-whatsapp/10 text-whatsapp px-4 py-2 rounded-full font-semibold text-sm md:text-base flex items-center gap-2">
+                <Gift className="w-4 h-4" />
+                Setup GRATIS (antes $399)
+              </span>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="primary" size="lg" showWhatsAppIcon>
-                Hablar por WhatsApp ahora
+                Recibir demo + cotización
               </Button>
             </div>
 
-            <div className="flex items-center gap-2 text-gray-600">
-              <CheckCircle className="w-5 h-5 text-whatsapp" />
-              <span className="text-sm md:text-base">
-                Ideal para salones, clínicas y restaurantes que reciben decenas de mensajes al día
-              </span>
+            {/* Qualification Filter */}
+            <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
+              <p className="text-sm font-semibold text-gray-700 mb-3">Ideal para ti si:</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
+                  <span className="text-sm">Negocio en USA o LATAM</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
+                  <span className="text-sm">+10 mensajes al día</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
+                  <span className="text-sm">Agendan citas o reservas</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
+                  <span className="text-sm">Presupuesto desde $299/mes</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -52,7 +79,7 @@ export function Hero() {
             <div className="absolute -right-4 md:right-0 bottom-1/4 z-10 animate-float" style={{ animationDelay: '1s' }}>
               <div className="bg-white rounded-xl shadow-lg px-4 py-3 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-whatsapp" />
-                <span className="text-sm font-medium">Conversión 35%</span>
+                <span className="text-sm font-medium">Más citas agendadas</span>
               </div>
             </div>
 

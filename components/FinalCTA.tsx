@@ -22,7 +22,7 @@ export function FinalCTA() {
           </p>
 
           <Button variant="white" size="lg" showWhatsAppIcon className="shadow-xl">
-            Hablar por WhatsApp ahora
+            Recibir demo + cotización
           </Button>
 
           <p className="text-white/70 text-sm mt-6">

@@ -3,6 +3,7 @@ export { Hero } from './Hero';
 export { LogoBar } from './LogoBar';
 export { ProblemSection } from './ProblemSection';
 export { ComparisonSection } from './ComparisonSection';
+export { PricingDetails } from './PricingDetails';
 export { BenefitsSection } from './BenefitsSection';
 export { HowItWorks } from './HowItWorks';
 export { UseCases } from './UseCases';

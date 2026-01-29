@@ -3,7 +3,7 @@ export const CONFIG = {
   // WhatsApp Configuration
   whatsapp: {
     number: '17705899034',
-    defaultMessage: 'Hola, me gustaría saber más acerca de este bot de WhatsApp para negocios.',
+    defaultMessage: 'Hola, soy dueño de ___ (mi negocio), recibo aprox ___ mensajes/día, quiero automatizar citas y atención.',
   },
 
   // Business Information

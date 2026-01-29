@@ -22,7 +22,7 @@ const benefits = [
   {
     icon: Megaphone,
     title: 'Convierte clicks en conversaciones',
-    description: 'Tus anuncios de Meta van directo a WhatsApp. Los leads empiezan a chatear al instante.',
+    description: 'Tus anuncios de Google y Meta van directo a WhatsApp. Los leads empiezan a chatear al instante.',
   },
   {
     icon: RefreshCw,
