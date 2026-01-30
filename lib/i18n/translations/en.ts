@@ -257,7 +257,7 @@ export const en: TranslationKeys = {
       },
       {
         question: 'Is it legal to use a bot on WhatsApp?',
-        answer: 'Yes, as long as you use the official WhatsApp Business API. AutoWhats works exclusively with official Meta-approved providers, so your account is completely safe.',
+        answer: 'Yes, as long as you use the official WhatsApp Business API. AutoWhats uses the official API, ensuring your account is completely safe and compliant with the terms of service.',
       },
       {
         question: 'Do you offer a guarantee?',
@@ -297,6 +297,7 @@ export const en: TranslationKeys = {
     termsOfService: 'Terms of Service',
     copyright: '© 2026 AutoWhats. All rights reserved.',
     company: 'AutoWhats is a product of Unity Ventures Innovations LLC',
+    disclaimer: 'AutoWhats is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or Meta.',
   },
 
   // Language

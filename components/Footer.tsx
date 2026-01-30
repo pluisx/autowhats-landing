@@ -45,12 +45,15 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center space-y-2">
           <p className="text-sm text-gray-500">
             {t.footer.copyright}
           </p>
-          <p className="text-xs text-gray-600 mt-2">
+          <p className="text-xs text-gray-600">
             {t.footer.company}
+          </p>
+          <p className="text-xs text-gray-600 max-w-2xl mx-auto">
+            {t.footer.disclaimer}
           </p>
         </div>
       </div>

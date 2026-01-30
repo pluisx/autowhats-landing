@@ -155,6 +155,7 @@ export interface TranslationKeys {
     termsOfService: string;
     copyright: string;
     company: string;
+    disclaimer: string;
   };
 
   language: {
