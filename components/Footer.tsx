@@ -2,10 +2,12 @@
 
 import Link from 'next/link';
 import { MessageCircle } from 'lucide-react';
-import { getWhatsAppUrl } from '@/lib/config';
+import { useWhatsAppUrl } from '@/lib/hooks';
+import { useLanguage } from '@/lib/i18n/LanguageContext';
 
 export function Footer() {
-  const whatsappUrl = getWhatsAppUrl();
+  const whatsappUrl = useWhatsAppUrl();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white py-12 md:py-16">
@@ -22,10 +24,10 @@ export function Footer() {
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
             <Link href="/privacidad" className="hover:text-white transition-colors">
-              Política de privacidad
+              {t.footer.privacyPolicy}
             </Link>
             <Link href="/terminos" className="hover:text-white transition-colors">
-              Términos de servicio
+              {t.footer.termsOfService}
             </Link>
           </div>
 
@@ -45,10 +47,10 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-sm text-gray-500">
-            © 2026 AutoWhats. Todos los derechos reservados.
+            {t.footer.copyright}
           </p>
           <p className="text-xs text-gray-600 mt-2">
-            AutoWhats is a product of Unity Ventures Innovations LLC
+            {t.footer.company}
           </p>
         </div>
       </div>

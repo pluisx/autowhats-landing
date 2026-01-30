@@ -1,57 +1,26 @@
 'use client';
 
 import { Scissors, UtensilsCrossed, ShoppingCart, Check } from 'lucide-react';
+import { useLanguage } from '@/lib/i18n/LanguageContext';
 
-const useCases = [
-  {
-    icon: Scissors,
-    emoji: '',
-    title: 'Salones y Clínicas',
-    features: [
-      'Confirmar y recordar citas automáticamente',
-      'Enviar indicaciones previas a la cita',
-      'Reprogramar citas con un par de mensajes',
-      'Enviar promociones a clientes frecuentes',
-    ],
-  },
-  {
-    icon: UtensilsCrossed,
-    emoji: '',
-    title: 'Restaurantes',
-    features: [
-      'Confirmar reservas y enviar ubicación',
-      'Enviar menú y promociones del día',
-      'Recordar la reserva horas antes',
-      'Tomar pedidos para delivery',
-    ],
-  },
-  {
-    icon: ShoppingCart,
-    emoji: '',
-    title: 'Ventas y Soporte',
-    features: [
-      'Responder preguntas sobre productos y precios',
-      'Dar seguimiento a cotizaciones pendientes',
-      'Abrir tickets de soporte',
-      'Derivar casos complejos al equipo',
-    ],
-  },
-];
+const icons = [Scissors, UtensilsCrossed, ShoppingCart];
 
 export function UseCases() {
+  const { t } = useLanguage();
+
   return (
     <section id="casos-de-uso" className="section-padding bg-gray-800">
       <div className="container-custom">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Ejemplos de lo que tu WhatsApp{' '}
-            <span className="text-primary-400">puede hacer solo</span>
+            {t.useCases.title}{' '}
+            <span className="text-primary-400">{t.useCases.titleHighlight}</span>
           </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-          {useCases.map((useCase, index) => {
-            const Icon = useCase.icon;
+          {t.useCases.categories.map((useCase, index) => {
+            const Icon = icons[index];
             return (
               <div
                 key={index}

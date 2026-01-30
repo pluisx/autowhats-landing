@@ -2,7 +2,7 @@
 
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { MessageCircle } from 'lucide-react';
-import { getWhatsAppUrl } from '@/lib/config';
+import { useWhatsAppUrl } from '@/lib/hooks';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'whatsapp' | 'outline' | 'white';
@@ -23,6 +23,8 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
+  const whatsappUrl = useWhatsAppUrl();
+
   const baseStyles = 'inline-flex items-center justify-center gap-2 font-semibold rounded-xl transform hover:scale-[1.02] transition-all duration-300';
 
   const variants = {
@@ -49,7 +51,7 @@ export function Button({
   );
 
   if (href || showWhatsAppIcon || variant === 'whatsapp') {
-    const finalHref = href || getWhatsAppUrl();
+    const finalHref = href || whatsappUrl;
 
     return (
       <a

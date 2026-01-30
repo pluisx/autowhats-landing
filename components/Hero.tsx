@@ -2,8 +2,11 @@
 
 import { MessageCircle, Zap, TrendingUp, CheckCircle, Gift } from 'lucide-react';
 import { Button, Badge } from './ui';
+import { useLanguage } from '@/lib/i18n/LanguageContext';
 
 export function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -11,57 +14,45 @@ export function Hero() {
           {/* Left Column - Text */}
           <div className="space-y-6 md:space-y-8">
             <Badge variant="warning" className="animate-pulse-slow">
-              CADA MENSAJE SIN RESPONDER = CLIENTE PERDIDO
+              {t.hero.badge}
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Automatiza tus mensajes de WhatsApp Business y{' '}
-              <span className="text-primary-500">responde 24/7</span> sin contratar más personal
+              {t.hero.title}{' '}
+              <span className="text-primary-500">{t.hero.titleHighlight}</span> {t.hero.titleEnd}
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              Deja de perder clientes por responder tarde. Convierte WhatsApp en una máquina
-              automática de agendar citas, cerrar ventas y atender consultas, incluso mientras
-              duermes.
+              {t.hero.subtitle}
             </p>
 
             {/* Pricing Badge */}
             <div className="flex flex-wrap items-center gap-3">
               <span className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-semibold text-sm md:text-base">
-                Desde $299/mes · Mes a mes
+                {t.hero.pricingBadge}
               </span>
               <span className="bg-whatsapp/10 text-whatsapp px-4 py-2 rounded-full font-semibold text-sm md:text-base flex items-center gap-2">
                 <Gift className="w-4 h-4" />
-                Setup GRATIS (antes $399)
+                {t.hero.freeSetup}
               </span>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="primary" size="lg" showWhatsAppIcon>
-                Recibir demo + cotización
+                {t.common.getDemo}
               </Button>
             </div>
 
             {/* Qualification Filter */}
             <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
-              <p className="text-sm font-semibold text-gray-700 mb-3">Ideal para ti si:</p>
+              <p className="text-sm font-semibold text-gray-700 mb-3">{t.hero.idealFor}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                <div className="flex items-center gap-2 text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
-                  <span className="text-sm">Negocio en USA o LATAM</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
-                  <span className="text-sm">+10 mensajes al día</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
-                  <span className="text-sm">Agendan citas o reservas</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
-                  <span className="text-sm">Presupuesto desde $299/mes</span>
-                </div>
+                {t.hero.qualifications.map((qualification, index) => (
+                  <div key={index} className="flex items-center gap-2 text-gray-600">
+                    <CheckCircle className="w-4 h-4 text-whatsapp flex-shrink-0" />
+                    <span className="text-sm">{qualification}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -72,14 +63,14 @@ export function Hero() {
             <div className="absolute -left-4 top-1/4 z-10 animate-float">
               <div className="bg-white rounded-xl shadow-lg px-4 py-3 flex items-center gap-2">
                 <Zap className="w-5 h-5 text-amber-500" />
-                <span className="text-sm font-medium">Respuesta en &lt;1 segundo</span>
+                <span className="text-sm font-medium">{t.hero.floatingLabels.responseTime}</span>
               </div>
             </div>
 
             <div className="absolute -right-4 md:right-0 bottom-1/4 z-10 animate-float" style={{ animationDelay: '1s' }}>
               <div className="bg-white rounded-xl shadow-lg px-4 py-3 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-whatsapp" />
-                <span className="text-sm font-medium">Más citas agendadas</span>
+                <span className="text-sm font-medium">{t.hero.floatingLabels.moreAppointments}</span>
               </div>
             </div>
 
@@ -93,8 +84,8 @@ export function Hero() {
                       <MessageCircle className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-sm">Tu Negocio</p>
-                      <p className="text-white/80 text-xs">en línea</p>
+                      <p className="text-white font-semibold text-sm">{t.hero.chat.businessName}</p>
+                      <p className="text-white/80 text-xs">{t.hero.chat.online}</p>
                     </div>
                   </div>
 
@@ -103,7 +94,7 @@ export function Hero() {
                     {/* Customer Message */}
                     <div className="flex justify-start">
                       <div className="bg-white rounded-lg rounded-tl-none px-3 py-2 max-w-[80%] shadow-sm">
-                        <p className="text-sm text-gray-800">Hola! Quiero agendar una cita para mañana</p>
+                        <p className="text-sm text-gray-800">{t.hero.chat.customer1}</p>
                         <p className="text-[10px] text-gray-500 text-right mt-1">10:32 PM</p>
                       </div>
                     </div>
@@ -112,15 +103,12 @@ export function Hero() {
                     <div className="flex justify-end">
                       <div className="bg-[#DCF8C6] rounded-lg rounded-tr-none px-3 py-2 max-w-[80%] shadow-sm">
                         <p className="text-sm text-gray-800">
-                          ¡Hola! Claro, con gusto te ayudo. Tenemos estos horarios disponibles para mañana:
+                          {t.hero.chat.bot1}
                         </p>
-                        <p className="text-sm text-gray-800 mt-2">
-                          09:00 AM<br />
-                          11:30 AM<br />
-                          03:00 PM<br />
-                          05:30 PM
+                        <p className="text-sm text-gray-800 mt-2 whitespace-pre-line">
+                          {t.hero.chat.bot1Times}
                         </p>
-                        <p className="text-sm text-gray-800 mt-2">¿Cuál prefieres?</p>
+                        <p className="text-sm text-gray-800 mt-2">{t.hero.chat.bot1Question}</p>
                         <p className="text-[10px] text-gray-500 text-right mt-1">10:32 PM</p>
                       </div>
                     </div>
@@ -128,7 +116,7 @@ export function Hero() {
                     {/* Customer Reply */}
                     <div className="flex justify-start">
                       <div className="bg-white rounded-lg rounded-tl-none px-3 py-2 max-w-[80%] shadow-sm">
-                        <p className="text-sm text-gray-800">El de las 3pm por favor</p>
+                        <p className="text-sm text-gray-800">{t.hero.chat.customer2}</p>
                         <p className="text-[10px] text-gray-500 text-right mt-1">10:33 PM</p>
                       </div>
                     </div>
@@ -137,7 +125,7 @@ export function Hero() {
                     <div className="flex justify-end">
                       <div className="bg-[#DCF8C6] rounded-lg rounded-tr-none px-3 py-2 max-w-[80%] shadow-sm">
                         <p className="text-sm text-gray-800">
-                          Perfecto! Tu cita está confirmada para mañana a las 3:00 PM. Te enviaremos un recordatorio 1 hora antes.
+                          {t.hero.chat.bot2}
                         </p>
                         <p className="text-[10px] text-gray-500 text-right mt-1">10:33 PM</p>
                       </div>

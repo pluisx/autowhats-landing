@@ -1,0 +1,1 @@
+export { useWhatsAppUrl } from './useWhatsAppUrl';

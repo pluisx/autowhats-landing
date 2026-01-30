@@ -2,52 +2,30 @@
 
 import { ClipboardList, Palette, Settings, Rocket, Sparkles } from 'lucide-react';
 import { Button } from './ui';
+import { useLanguage } from '@/lib/i18n/LanguageContext';
 
-const steps = [
-  {
-    number: '01',
-    icon: ClipboardList,
-    title: 'Analizamos tu negocio',
-    description: 'Revisamos tus mensajes actuales y definimos qué quieres automatizar: citas, reservas, ventas, soporte...',
-  },
-  {
-    number: '02',
-    icon: Palette,
-    title: 'Diseñamos tus flujos',
-    description: 'Creamos los mensajes automáticos y la lógica de conversación adaptada a tu negocio.',
-  },
-  {
-    number: '03',
-    icon: Settings,
-    title: 'Configuramos todo',
-    description: 'Conectamos WhatsApp Business, probamos con casos reales y ajustamos hasta que quede perfecto.',
-  },
-  {
-    number: '04',
-    icon: Rocket,
-    title: 'Tú solo cierras ventas',
-    description: 'El bot atiende las consultas repetitivas. Tú solo intervienes en los casos importantes.',
-  },
-];
+const icons = [ClipboardList, Palette, Settings, Rocket];
 
 export function HowItWorks() {
+  const { t } = useLanguage();
+
   return (
     <section id="como-funciona" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Así de <span className="text-primary-500">simple</span> es empezar
+            {t.howItWorks.title} <span className="text-primary-500">{t.howItWorks.titleHighlight}</span> {t.howItWorks.titleEnd}
           </h2>
         </div>
 
         {/* Steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {steps.map((step, index) => {
-            const Icon = step.icon;
+          {t.howItWorks.steps.map((step, index) => {
+            const Icon = icons[index];
             return (
               <div key={index} className="relative">
                 {/* Connector Line (hidden on mobile, first item on larger screens) */}
-                {index < steps.length - 1 && (
+                {index < t.howItWorks.steps.length - 1 && (
                   <div className="hidden lg:block absolute top-12 left-[60%] w-full h-0.5 bg-gray-200" />
                 )}
 
@@ -74,10 +52,10 @@ export function HowItWorks() {
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 text-whatsapp mb-6">
             <Sparkles className="w-5 h-5" />
-            <span className="font-medium">Todo el proceso puede estar listo en pocos días</span>
+            <span className="font-medium">{t.howItWorks.readyNote}</span>
           </div>
           <Button variant="primary" size="lg" showWhatsAppIcon>
-            Quiero ver cómo funciona en mi negocio
+            {t.howItWorks.cta}
           </Button>
         </div>
       </div>

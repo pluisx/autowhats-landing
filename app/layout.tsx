@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Providers } from "@/components";
 
 const baseUrl = "https://autowhats.unitvent.com";
 
@@ -698,7 +699,7 @@ gtag('config', 'G-H0NKHH0SDK');`,
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

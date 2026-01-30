@@ -1,18 +1,21 @@
 'use client';
 
 import { Calendar, Share2 } from 'lucide-react';
-
-const logos = [
-  { name: 'Google Calendar', icon: Calendar },
-  { name: 'Meta Ads', icon: Share2 },
-];
+import { useLanguage } from '@/lib/i18n/LanguageContext';
 
 export function LogoBar() {
+  const { t } = useLanguage();
+
+  const logos = [
+    { name: t.logoBar.googleCalendar, icon: Calendar },
+    { name: t.logoBar.metaAds, icon: Share2 },
+  ];
+
   return (
     <section className="py-12 md:py-16 bg-gray-50 border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-gray-500 text-sm md:text-base mb-8">
-          Integraciones incluidas
+          {t.logoBar.title}
         </p>
 
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
@@ -31,7 +34,7 @@ export function LogoBar() {
         </div>
 
         <p className="text-center text-gray-400 text-xs md:text-sm mt-6">
-          Otras integraciones (HubSpot, Calendly, Zoho, etc.) disponibles bajo solicitud
+          {t.logoBar.otherIntegrations}
         </p>
       </div>
     </section>

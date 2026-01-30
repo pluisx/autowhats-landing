@@ -12,3 +12,5 @@ export { FAQ } from './FAQ';
 export { FinalCTA } from './FinalCTA';
 export { Footer } from './Footer';
 export { WhatsAppButton } from './WhatsAppButton';
+export { LanguageSwitch } from './LanguageSwitch';
+export { Providers } from './Providers';
