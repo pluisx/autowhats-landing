@@ -295,7 +295,7 @@ export const es = {
     termsOfService: 'Términos de servicio',
     copyright: '© 2026 AutoWhats. Todos los derechos reservados.',
     company: 'AutoWhats is a product of Unity Ventures Innovations LLC',
-    disclaimer: 'AutoWhats no está afiliado, asociado, autorizado, respaldado por, ni de ninguna manera oficialmente conectado con WhatsApp o Meta.',
+    disclaimer: 'AutoWhats no está afiliado ni respaldado por WhatsApp o Meta.',
   },
 
   // Language

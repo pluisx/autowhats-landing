@@ -297,7 +297,7 @@ export const en: TranslationKeys = {
     termsOfService: 'Terms of Service',
     copyright: '© 2026 AutoWhats. All rights reserved.',
     company: 'AutoWhats is a product of Unity Ventures Innovations LLC',
-    disclaimer: 'AutoWhats is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or Meta.',
+    disclaimer: 'AutoWhats is not affiliated with or endorsed by WhatsApp or Meta.',
   },
 
   // Language
