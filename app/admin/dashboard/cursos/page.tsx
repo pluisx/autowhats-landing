@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { Plus, Pencil, Trash2, Loader2, Calendar, MapPin, Users, Clock } from 'lucide-react';
+import { Pencil, Loader2, Calendar, MapPin, Users, Clock } from 'lucide-react';
 import { useToast } from '@/components/admin/ToastProvider';
 import { CursoForm } from '@/components/admin/CursoForm';
-import { ConfirmDialog } from '@/components/admin/ConfirmDialog';
 import type { Curso } from '@/lib/types/admin';
 
 export default function CursosPage() {
@@ -12,7 +11,6 @@ export default function CursosPage() {
   const [loading, setLoading] = useState(true);
   const [formOpen, setFormOpen] = useState(false);
   const [editingCurso, setEditingCurso] = useState<Curso | null>(null);
-  const [deleteTarget, setDeleteTarget] = useState<Curso | null>(null);
   const { addToast } = useToast();
 
   const fetchCursos = useCallback(async () => {
@@ -33,9 +31,8 @@ export default function CursosPage() {
   }, [fetchCursos]);
 
   async function handleSave(curso: Curso) {
-    const isEdit = !!curso.id;
     const res = await fetch('/api/admin/cursos', {
-      method: isEdit ? 'PUT' : 'POST',
+      method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(curso),
     });
@@ -45,32 +42,8 @@ export default function CursosPage() {
       return;
     }
 
-    addToast(isEdit ? 'Curso actualizado' : 'Curso creado', 'success');
+    addToast('Curso actualizado', 'success');
     fetchCursos();
-  }
-
-  async function handleDelete() {
-    if (!deleteTarget) return;
-
-    const res = await fetch('/api/admin/cursos', {
-      method: 'DELETE',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: deleteTarget.id }),
-    });
-
-    if (!res.ok) {
-      addToast('Error al eliminar curso', 'error');
-      return;
-    }
-
-    addToast('Curso eliminado', 'success');
-    setDeleteTarget(null);
-    fetchCursos();
-  }
-
-  function openCreate() {
-    setEditingCurso(null);
-    setFormOpen(true);
   }
 
   function openEdit(curso: Curso) {
@@ -88,24 +61,14 @@ export default function CursosPage() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">Cursos</h1>
-          <p className="text-gray-500 text-sm mt-1">{cursos.length} cursos</p>
-        </div>
-        <button
-          onClick={openCreate}
-          className="flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl hover:from-primary-600 hover:to-primary-700 transition-all shadow-[0_4px_14px_0_rgba(249,115,22,0.39)] hover:shadow-lg"
-        >
-          <Plus className="w-4 h-4" />
-          Agregar
-        </button>
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold text-gray-900">Cursos</h1>
+        <p className="text-gray-500 text-sm mt-1">{cursos.length} {cursos.length === 1 ? 'curso' : 'cursos'}</p>
       </div>
 
       {cursos.length === 0 ? (
         <div className="text-center py-20 text-gray-500">
-          <p className="text-lg mb-2">No hay cursos</p>
-          <p className="text-sm">Agrega tu primer curso</p>
+          <p className="text-lg">No hay cursos registrados</p>
         </div>
       ) : (
         <div className="grid gap-4 md:grid-cols-2">
@@ -150,20 +113,13 @@ export default function CursosPage() {
 
               <div className="flex items-center justify-between pt-3 border-t border-gray-200">
                 <span className="text-xl font-bold text-gray-900">${curso.precio}</span>
-                <div className="flex gap-1">
-                  <button
-                    onClick={() => openEdit(curso)}
-                    className="p-2 text-gray-400 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-all"
-                  >
-                    <Pencil className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={() => setDeleteTarget(curso)}
-                    className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button>
-                </div>
+                <button
+                  onClick={() => openEdit(curso)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-all"
+                >
+                  <Pencil className="w-4 h-4" />
+                  Editar
+                </button>
               </div>
             </div>
           ))}
@@ -175,14 +131,6 @@ export default function CursosPage() {
         curso={editingCurso}
         onSave={handleSave}
         onClose={() => setFormOpen(false)}
-      />
-
-      <ConfirmDialog
-        open={!!deleteTarget}
-        title="Eliminar Curso"
-        message={`Estas segura que quieres eliminar "${deleteTarget?.nombre}"? Esta accion no se puede deshacer.`}
-        onConfirm={handleDelete}
-        onCancel={() => setDeleteTarget(null)}
       />
     </div>
   );
