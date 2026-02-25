@@ -32,7 +32,7 @@ export const es = {
     freeSetup: 'Setup GRATIS (antes $399)',
     idealFor: 'Ideal para ti si:',
     qualifications: [
-      'Tienes tienda online (Shopify, WooCommerce, etc.)',
+      'Tienes tienda online de cualquier plataforma',
       'Recibes +10 mensajes al día de clientes',
       'Pierdes ventas por responder tarde',
       'Presupuesto desde $299/mes',
@@ -56,9 +56,9 @@ export const es = {
   // Logo Bar
   logoBar: {
     title: 'Integraciones incluidas',
-    googleCalendar: 'Shopify',
+    googleCalendar: 'Tu tienda online',
     metaAds: 'Meta Ads',
-    otherIntegrations: 'Otras integraciones (WooCommerce, Tiendanube, MercadoShops, HubSpot, etc.) disponibles bajo solicitud',
+    otherIntegrations: 'Compatible con Shopify, WooCommerce, Tiendanube, MercadoShops y más. Otras integraciones disponibles bajo solicitud.',
   },
 
   // Problem Section
@@ -144,7 +144,7 @@ export const es = {
       },
       {
         title: 'Conectamos tu tienda',
-        description: 'Integramos WhatsApp con tu plataforma (Shopify, WooCommerce, etc.), probamos con casos reales y ajustamos hasta que funcione perfecto.',
+        description: 'Integramos WhatsApp con tu plataforma de e-commerce, probamos con casos reales y ajustamos hasta que funcione perfecto.',
       },
       {
         title: 'Tú solo cierras ventas',
@@ -230,8 +230,8 @@ export const es = {
         answer: 'Los planes comienzan desde $299 USD al mes. El precio incluye la API de WhatsApp Business, el modelo de IA GPT-4, configuración inicial y soporte técnico. Ofrecemos una demo gratuita para que veas cómo funciona antes de decidir.',
       },
       {
-        question: '¿Se integra con Shopify o WooCommerce?',
-        answer: 'Sí. Podemos conectar AutoWhats con tu plataforma de e-commerce para que el bot tenga acceso al estado de pedidos, inventario y datos del cliente en tiempo real. Esto permite responder preguntas de tracking, disponibilidad y más de forma automática.',
+        question: '¿Se integra con mi plataforma de tienda online?',
+        answer: 'Sí. Podemos conectar AutoWhats con tu plataforma de e-commerce (Shopify, WooCommerce, Tiendanube y más) para que el bot tenga acceso al estado de pedidos, inventario y datos del cliente en tiempo real. Esto permite responder preguntas de tracking, disponibilidad y más de forma automática.',
       },
       {
         question: '¿Cómo funciona la recuperación de carritos abandonados?',
@@ -273,7 +273,7 @@ export const es = {
       { title: 'Recuperación de carritos abandonados', description: 'Mensajes automáticos con timing personalizado' },
       { title: 'Seguimiento de pedidos automático', description: 'Confirmación + tracking + notificación de entrega' },
       { title: 'Soporte de clientes 24/7', description: 'FAQ, tallas, envíos, devoluciones automatizadas' },
-      { title: 'Integración con tu plataforma', description: 'Shopify, WooCommerce y más' },
+      { title: 'Integración con tu plataforma', description: 'Compatible con las principales plataformas de e-commerce' },
       { title: 'Entrenamiento personalizado', description: 'Configurado con tu catálogo y políticas' },
       { title: 'Soporte por WhatsApp', description: 'Ayuda cuando la necesites' },
     ],
