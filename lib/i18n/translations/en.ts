@@ -3,8 +3,8 @@ import type { TranslationKeys } from './types';
 export const en: TranslationKeys = {
   // Metadata
   meta: {
-    title: 'How to Create a WhatsApp AI Bot | Automate Your Business 24/7',
-    description: 'Learn how to build a WhatsApp bot for your business. AI-powered chatbot that responds automatically, books appointments, and handles customer service 24/7. No coding required.',
+    title: 'Automate Your Online Store\'s WhatsApp | Recover Sales 24/7',
+    description: 'Recover abandoned carts, answer customer questions, and send order updates automatically via WhatsApp. No coding. Starting at $299/mo.',
   },
 
   // Common
@@ -25,107 +25,107 @@ export const en: TranslationKeys = {
 
   // Hero
   hero: {
-    badge: 'EVERY UNANSWERED MESSAGE = LOST CUSTOMER',
-    title: 'Automate your WhatsApp Business messages and',
-    titleHighlight: 'respond 24/7',
-    titleEnd: 'without hiring more staff',
-    subtitle: 'Stop losing customers because you reply too late. Turn WhatsApp into an automated machine that books appointments, closes sales, and handles inquiries—even while you sleep.',
+    badge: 'EVERY ABANDONED CART = LOST REVENUE',
+    title: 'Automate your store\'s WhatsApp and',
+    titleHighlight: 'recover sales',
+    titleEnd: 'on autopilot',
+    subtitle: '70% of carts get abandoned. With AutoWhats, your store responds instantly, tracks orders, and wins back customers — without you touching your phone.',
     pricingBadge: 'Starting at $299/mo · Month-to-month',
     freeSetup: 'FREE Setup (was $399)',
     idealFor: 'Perfect for you if:',
     qualifications: [
-      'Business in the USA or LATAM',
-      '10+ messages per day',
-      'You book appointments or reservations',
+      'You have an online store (Shopify, WooCommerce, etc.)',
+      'You receive 10+ customer messages per day',
+      'You\'re losing sales from slow responses',
       'Budget starting at $299/mo',
     ],
     floatingLabels: {
       responseTime: 'Response in <1 second',
-      moreAppointments: 'More booked appointments',
+      moreAppointments: 'More recovered sales',
     },
     chat: {
-      businessName: 'Your Business',
+      businessName: 'Your Store',
       online: 'online',
-      customer1: 'Hi! I want to book an appointment for tomorrow',
-      bot1: "Hi there! I'd be happy to help. Here are the available times for tomorrow:",
-      bot1Times: '09:00 AM\n11:30 AM\n03:00 PM\n05:30 PM',
-      bot1Question: 'Which one works for you?',
-      customer2: 'The 3pm slot please',
-      bot2: "Perfect! Your appointment is confirmed for tomorrow at 3:00 PM. We'll send you a reminder 1 hour before.",
+      customer1: 'Hi, where\'s my order? I placed it 2 days ago',
+      bot1: 'Hi! Your order #4521 has been shipped. Here\'s your tracking info:',
+      bot1Times: '📦 Carrier: FedEx\n🔢 Tracking: 7489234891\n📅 Est. delivery: Feb 26-28',
+      bot1Question: 'Is there anything else I can help you with?',
+      customer2: 'Perfect, thank you!',
+      bot2: 'You\'re welcome! I\'m here 24/7 if you need anything. You can also reach out if you need to update your delivery address 😊',
     },
   },
 
   // Logo Bar
   logoBar: {
     title: 'Integrations included',
-    googleCalendar: 'Google Calendar',
+    googleCalendar: 'Shopify',
     metaAds: 'Meta Ads',
-    otherIntegrations: 'Other integrations (HubSpot, Calendly, Zoho, etc.) available upon request',
+    otherIntegrations: 'Other integrations (WooCommerce, Tiendanube, MercadoShops, HubSpot, etc.) available upon request',
   },
 
   // Problem Section
   problem: {
-    title: 'Is your WhatsApp always',
-    titleHighlight: 'overflowing',
-    titleEnd: 'with messages?',
+    title: 'Is your store losing sales because you\'re not',
+    titleHighlight: 'responding',
+    titleEnd: 'fast enough?',
     problems: [
-      'You spend hours answering the same questions over and over',
-      'You lose appointments and sales by responding late or not at all',
-      'Your team is overwhelmed with messages and can\'t keep up',
-      'Customers who message after hours never get a response',
+      'Customers ask about products and you take hours to reply — they already bought from a competitor',
+      'Abandoned carts with no follow-up turn into money left on the table',
+      'Your team manually handles 50-80 messages a day answering the same questions',
+      'Customers who message at night or on weekends never hear back from you',
     ],
   },
 
   // Comparison Section
   comparison: {
-    title: 'Stop wasting time and money with',
-    titleHighlight: 'manual responses',
+    title: 'Stop losing sales to',
+    titleHighlight: 'manual support',
     manual: {
       title: 'Manual WhatsApp',
       responseTime: { metric: 'Response time', value: '1-48 hours' },
       availability: { metric: 'Availability', value: 'Business hours only' },
       monthlyCost: { metric: 'Monthly cost', value: '$5,000-12,000 (salary)' },
-      lostLeads: { metric: 'Lost leads', value: '40-60% (slow responses)' },
+      lostLeads: { metric: 'Lost sales', value: '40-60% (slow responses)' },
     },
     automated: {
       title: 'Automated WhatsApp',
       responseTime: { metric: 'Response time', value: 'Instant (<1 sec)' },
       availability: { metric: 'Availability', value: '24/7 including weekends' },
       monthlyCost: { metric: 'Monthly cost', value: 'Starting at $299 USD/mo' },
-      lostLeads: { metric: 'Lost leads', value: 'Every message answered instantly' },
+      lostLeads: { metric: 'Lost sales', value: 'Every message answered instantly' },
     },
-    savingsBanner: 'Save thousands per month vs hiring staff',
+    savingsBanner: 'Save thousands per month vs hiring support staff',
   },
 
   // Benefits Section
   benefits: {
-    title: 'More revenue.',
-    titleHighlight: 'Less stress.',
-    subtitle: 'We handle your WhatsApp so you can focus on closing deals and growing your business.',
+    title: 'More sales.',
+    titleHighlight: 'Less chaos.',
+    subtitle: 'We handle your WhatsApp so you can focus on growing your store.',
     items: [
+      {
+        title: 'Recover abandoned carts',
+        description: 'The bot detects unpaid carts and automatically sends a personalized message. Recover 10-15% of sales you\'d otherwise lose.',
+      },
       {
         title: 'Make money while you sleep',
         description: 'Your bot responds at 2am, weekends, holidays. Every message gets answered. Every lead gets captured.',
       },
       {
-        title: 'Fill your calendar faster',
-        description: 'Customers book appointments directly in the chat. No calls, no back-and-forth messaging.',
+        title: 'Auto-update order status',
+        description: 'Confirm orders, send tracking numbers, and notify when the package is on its way — without lifting a finger.',
       },
       {
-        title: 'Only talk to serious buyers',
-        description: 'The bot filters out tire-kickers and only passes you leads ready to buy. Save hours every week.',
+        title: 'Answer product questions instantly',
+        description: 'Sizes, colors, availability, shipping times. The bot answers your store\'s most common questions in seconds.',
       },
       {
-        title: 'Turn clicks into conversations',
-        description: 'Your Google and Meta ads go straight to WhatsApp. Leads start chatting instantly.',
+        title: 'Turn clicks into sales',
+        description: 'Your Google and Meta ads go straight to WhatsApp. Customers start chatting — and the bot guides them to checkout.',
       },
       {
-        title: 'Win back old customers',
-        description: 'Automated campaigns to re-engage customers who haven\'t come back. Turn your list into money.',
-      },
-      {
-        title: 'Reduce no-shows',
-        description: 'Automatic reminders before every appointment. Your customers show up, your calendar stays full.',
+        title: 'Handle returns without friction',
+        description: 'The bot walks customers through the return or exchange process, collects the needed info, and creates a ticket automatically.',
       },
     ],
   },
@@ -137,55 +137,55 @@ export const en: TranslationKeys = {
     titleEnd: '',
     steps: [
       {
-        title: 'We analyze your business',
-        description: 'We review your current messages and define what you want to automate: appointments, reservations, sales, support...',
+        title: 'We analyze your store',
+        description: 'We review your current messages and define what to automate: support, order tracking, cart recovery, product questions...',
       },
       {
         title: 'We design your flows',
-        description: 'We create automated messages and conversation logic tailored to your business.',
+        description: 'We create automated messages and conversation logic tailored to your catalog and sales process.',
       },
       {
-        title: 'We set everything up',
-        description: 'We connect WhatsApp Business, test with real scenarios, and fine-tune until it\'s perfect.',
+        title: 'We connect your store',
+        description: 'We integrate WhatsApp with your platform (Shopify, WooCommerce, etc.), test with real scenarios, and fine-tune until it\'s perfect.',
       },
       {
         title: 'You just close sales',
-        description: 'The bot handles repetitive inquiries. You only step in for the important cases.',
+        description: 'The bot handles support, tracks orders, and recovers carts. You only step in when it really matters.',
       },
     ],
     readyNote: 'The entire process can be ready in just a few days',
-    cta: 'I want to see how it works for my business',
+    cta: 'I want to see how it works for my store',
   },
 
   // Use Cases
   useCases: {
-    title: 'Examples of what your WhatsApp',
+    title: 'Examples of what your store',
     titleHighlight: 'can do on its own',
     categories: [
       {
-        title: 'Salons & Clinics',
+        title: 'Sales Recovery',
         features: [
-          'Automatically confirm and remind appointments',
-          'Send pre-appointment instructions',
-          'Reschedule appointments with just a few messages',
-          'Send promotions to repeat customers',
+          'Automatic abandoned cart message with discount offer',
+          'Follow-up with customers who got a quote but didn\'t buy',
+          'Re-engage inactive customers with promotions',
+          'Notify waitlisted customers when items are back in stock',
         ],
       },
       {
-        title: 'Restaurants',
+        title: 'Post-Purchase & Support',
         features: [
-          'Confirm reservations and send location',
-          'Send daily menu and specials',
-          'Remind about reservations hours before',
-          'Take delivery orders',
+          'Order confirmation with summary and total',
+          'Automatic tracking number delivery',
+          'Notification when package is out for delivery',
+          'Step-by-step returns and exchanges management',
         ],
       },
       {
-        title: 'Sales & Support',
+        title: 'Customer Service',
         features: [
-          'Answer questions about products and pricing',
-          'Follow up on pending quotes',
-          'Open support tickets',
+          'Answer questions about sizes, colors, and availability',
+          'Inform shipping times and costs by region',
+          'Clarify payment methods and accepted cards',
           'Escalate complex cases to your team',
         ],
       },
@@ -194,24 +194,24 @@ export const en: TranslationKeys = {
 
   // Testimonials
   testimonials: {
-    title: 'What businesses',
+    title: 'What stores',
     titleHighlight: 'like yours say',
-    subtitle: 'See how automation is transforming their results',
+    subtitle: 'See how automation is transforming their sales',
     reviews: [
       {
-        quote: 'Now 80% of messages are answered automatically and we only handle important cases. We save at least 3 hours every day.',
-        author: 'Maria Gonzalez',
-        business: '"Glamour" Beauty Salon',
+        quote: 'We recovered 12% of abandoned carts in the first month. The bot sends the right message at exactly the right time. That\'s pure revenue we were losing before.',
+        author: 'Sofia Reyes',
+        business: '"Moda Única" Clothing Store',
       },
       {
-        quote: 'We stopped losing reservations from slow responses. The bot always answers, even when we\'re slammed with service.',
-        author: 'Carlos Mendez',
-        business: '"La Esquina" Restaurant',
+        quote: 'We used to spend 3 hours a day on WhatsApp. Now the bot handles 85% of messages and we only deal with the important cases.',
+        author: 'Diego Morales',
+        business: '"TechStore" Electronics',
       },
       {
-        quote: 'In the first week, the bot booked 42 new appointments without me touching my phone. Incredible.',
-        author: 'Ana Ruiz',
-        business: '"Sonrisa" Dental Clinic',
+        quote: 'Customers ask about tracking, sizes, and returns all day. The bot handles it instantly and our customer service rating went from 3.2 to 4.8 stars.',
+        author: 'Valentina Cruz',
+        business: '"Luxe Shop" Accessories',
       },
     ],
     googleReview: 'on Google',
@@ -221,31 +221,35 @@ export const en: TranslationKeys = {
   faq: {
     title: 'Frequently asked',
     titleHighlight: 'questions',
-    subtitle: 'Everything you need to know about AutoWhats',
+    subtitle: 'Everything you need to know about AutoWhats for your online store',
     items: [
       {
         question: 'What is AutoWhats?',
-        answer: 'AutoWhats is a service that creates and configures an intelligent chatbot for your WhatsApp Business. We handle everything: connecting to the official WhatsApp API, the artificial intelligence (GPT-4), and ongoing maintenance. You just provide information about your business.',
+        answer: 'AutoWhats is a service that creates and configures an intelligent chatbot for your WhatsApp Business. We handle everything: connecting to the official WhatsApp API, the AI model, and ongoing maintenance. You just tell us how your store works.',
       },
       {
         question: 'How much does the service cost?',
         answer: 'Plans start at $299 USD per month. The price includes the WhatsApp Business API, the GPT-4 AI model, initial setup, and technical support. We offer a free demo so you can see how it works before deciding.',
       },
       {
+        question: 'Does it integrate with Shopify or WooCommerce?',
+        answer: 'Yes. We can connect AutoWhats to your e-commerce platform so the bot has real-time access to order status, inventory, and customer data. This lets it answer tracking questions, check availability, and more — automatically.',
+      },
+      {
+        question: 'How does abandoned cart recovery work?',
+        answer: 'When a customer leaves items in their cart without buying, the bot sends a personalized WhatsApp message reminding them about the products and optionally offering a discount. The timing and message are configured based on your strategy.',
+      },
+      {
         question: 'How long does it take to get my bot running?',
-        answer: 'Between 24 and 48 hours. Once you provide us with your business information (services, prices, hours, FAQs), we configure everything and get it ready to serve your customers.',
+        answer: 'Between 24 and 48 hours. Once you provide your store\'s information (catalog, shipping policies, FAQs), we configure everything and get it ready to serve your customers.',
       },
       {
         question: 'Do I need to know how to code?',
         answer: 'No. AutoWhats is a fully managed service. We handle all the technical work. You just need to tell us how your business works and what kind of responses you want the bot to give.',
       },
       {
-        question: 'What types of businesses does it work for?',
-        answer: 'AutoWhats works for any business that receives inquiries via WhatsApp: beauty salons, medical and dental clinics, restaurants, gyms, real estate agencies, online stores, schools, professional services, and more.',
-      },
-      {
-        question: 'Can the bot schedule appointments automatically?',
-        answer: 'Yes. The bot integrates with Google Calendar to show your real availability and confirm appointments without human intervention. It can also send automatic reminders before each appointment.',
+        question: 'Can the bot handle returns?',
+        answer: 'Yes. The bot can walk the customer through the return process step by step, collect the necessary information (order number, reason, product photos), and automatically create a ticket for your team to process.',
       },
       {
         question: 'What happens if a customer needs to talk to a human?',
@@ -253,11 +257,7 @@ export const en: TranslationKeys = {
       },
       {
         question: 'Does the bot understand voice messages and images?',
-        answer: 'Yes. We use GPT-4 Vision to understand images and Whisper to transcribe voice messages. Your bot can receive reference photos or voice notes and respond appropriately.',
-      },
-      {
-        question: 'Is it legal to use a bot on WhatsApp?',
-        answer: 'Yes, as long as you use the official WhatsApp Business API. AutoWhats uses the official API, ensuring your account is completely safe and compliant with the terms of service.',
+        answer: 'Yes. We use GPT-4 Vision to understand images (like photos of a defective product) and Whisper to transcribe voice messages. Perfect for handling complaints or inquiries that require visual context.',
       },
       {
         question: 'Do you offer a guarantee?',
@@ -270,13 +270,13 @@ export const en: TranslationKeys = {
   pricing: {
     title: "What's included in the",
     titleHighlight: '$299/mo plan',
-    subtitle: 'Everything you need to automate your WhatsApp Business',
+    subtitle: 'Everything you need to automate your store\'s WhatsApp',
     features: [
-      { title: 'Conversation flows', description: 'FAQs + appointments + handoff to advisor' },
-      { title: 'Google Calendar integration', description: 'Automatic appointment scheduling' },
-      { title: 'Custom training', description: 'Configured with your business info' },
-      { title: 'Monthly adjustments', description: 'Modifications included every month' },
-      { title: 'Fast implementation', description: '3-7 days to go live' },
+      { title: 'Abandoned cart recovery', description: 'Automated messages with custom timing' },
+      { title: 'Automatic order tracking', description: 'Confirmation + tracking + delivery notification' },
+      { title: '24/7 customer support', description: 'FAQs, sizing, shipping, returns — automated' },
+      { title: 'Store integration', description: 'Shopify, WooCommerce, and more' },
+      { title: 'Custom training', description: 'Configured with your catalog and policies' },
       { title: 'WhatsApp support', description: 'Help when you need it' },
     ],
     price: '$299',
@@ -286,9 +286,9 @@ export const en: TranslationKeys = {
 
   // Final CTA
   finalCta: {
-    title: 'Ready to stop losing customers on WhatsApp?',
-    subtitle: 'Schedule a quick call and we\'ll show you how to automate your business messages without the hassle.',
-    disclaimer: 'No commitment. We\'ll just see if automation makes sense for your business.',
+    title: 'Ready to recover sales you\'re losing today?',
+    subtitle: 'Schedule a quick call and we\'ll show you how AutoWhats can be running in your store in less than 48 hours.',
+    disclaimer: 'No commitment. We\'ll just see if automation makes sense for your store.',
   },
 
   // Footer

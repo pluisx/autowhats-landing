@@ -1,8 +1,8 @@
 export const es = {
   // Metadata
   meta: {
-    title: 'Cómo Crear un Bot de WhatsApp con IA | Automatiza tu Negocio 24/7',
-    description: 'Aprende cómo hacer un bot de WhatsApp para tu negocio. Chatbot con inteligencia artificial que responde automáticamente, agenda citas y atiende clientes 24/7. Sin programar.',
+    title: 'Automatiza el WhatsApp de tu Tienda Online | Recupera Ventas 24/7',
+    description: 'Recupera carritos abandonados, responde preguntas de clientes y envía actualizaciones de pedidos automáticamente por WhatsApp. Sin programar. Desde $299/mes.',
   },
 
   // Common
@@ -23,107 +23,107 @@ export const es = {
 
   // Hero
   hero: {
-    badge: 'CADA MENSAJE SIN RESPONDER = CLIENTE PERDIDO',
-    title: 'Automatiza tus mensajes de WhatsApp Business y',
-    titleHighlight: 'responde 24/7',
-    titleEnd: 'sin contratar más personal',
-    subtitle: 'Deja de perder clientes por responder tarde. Convierte WhatsApp en una máquina automática de agendar citas, cerrar ventas y atender consultas, incluso mientras duermes.',
+    badge: 'CADA CARRITO ABANDONADO = INGRESO PERDIDO',
+    title: 'Automatiza el WhatsApp de tu tienda y',
+    titleHighlight: 'recupera ventas',
+    titleEnd: 'en piloto automático',
+    subtitle: 'El 70% de los carritos se abandonan. Con AutoWhats, tu tienda responde al instante, hace seguimiento de pedidos y recupera clientes — sin que tú toques el teléfono.',
     pricingBadge: 'Desde $299/mes · Mes a mes',
     freeSetup: 'Setup GRATIS (antes $399)',
     idealFor: 'Ideal para ti si:',
     qualifications: [
-      'Negocio en USA o LATAM',
-      '+10 mensajes al día',
-      'Agendan citas o reservas',
+      'Tienes tienda online (Shopify, WooCommerce, etc.)',
+      'Recibes +10 mensajes al día de clientes',
+      'Pierdes ventas por responder tarde',
       'Presupuesto desde $299/mes',
     ],
     floatingLabels: {
       responseTime: 'Respuesta en <1 segundo',
-      moreAppointments: 'Más citas agendadas',
+      moreAppointments: 'Más ventas recuperadas',
     },
     chat: {
-      businessName: 'Tu Negocio',
+      businessName: 'Tu Tienda',
       online: 'en línea',
-      customer1: 'Hola! Quiero agendar una cita para mañana',
-      bot1: '¡Hola! Claro, con gusto te ayudo. Tenemos estos horarios disponibles para mañana:',
-      bot1Times: '09:00 AM\n11:30 AM\n03:00 PM\n05:30 PM',
-      bot1Question: '¿Cuál prefieres?',
-      customer2: 'El de las 3pm por favor',
-      bot2: 'Perfecto! Tu cita está confirmada para mañana a las 3:00 PM. Te enviaremos un recordatorio 1 hora antes.',
+      customer1: 'Hola, ¿dónde está mi pedido? Lo hice hace 2 días',
+      bot1: '¡Hola! Tu pedido #4521 ya fue enviado. Aquí están los datos de rastreo:',
+      bot1Times: '📦 Courier: FedEx\n🔢 Tracking: 7489234891\n📅 Entrega est.: 26-28 Feb',
+      bot1Question: '¿Necesitas ayuda con algo más?',
+      customer2: 'Perfecto, gracias!',
+      bot2: '¡Con gusto! Si tienes cualquier duda estoy aquí 24/7. También puedes escribirnos si quieres cambiar la dirección de entrega 😊',
     },
   },
 
   // Logo Bar
   logoBar: {
     title: 'Integraciones incluidas',
-    googleCalendar: 'Google Calendar',
+    googleCalendar: 'Shopify',
     metaAds: 'Meta Ads',
-    otherIntegrations: 'Otras integraciones (HubSpot, Calendly, Zoho, etc.) disponibles bajo solicitud',
+    otherIntegrations: 'Otras integraciones (WooCommerce, Tiendanube, MercadoShops, HubSpot, etc.) disponibles bajo solicitud',
   },
 
   // Problem Section
   problem: {
-    title: '¿Tu WhatsApp está siempre',
-    titleHighlight: 'explotando',
-    titleEnd: 'de mensajes?',
+    title: '¿Tu tienda está perdiendo ventas por',
+    titleHighlight: 'no responder',
+    titleEnd: 'a tiempo?',
     problems: [
-      'Pasas horas respondiendo las mismas preguntas una y otra vez',
-      'Pierdes citas y ventas por responder tarde o no responder',
-      'Tu equipo está saturado con mensajes y no llega a todo',
-      'Clientes que escriben fuera de horario nunca reciben respuesta',
+      'Clientes preguntan por productos y tú tardas horas en responder — ya compraron en otra tienda',
+      'Carritos abandonados que nadie hace seguimiento y se convierten en dinero perdido',
+      'Tu equipo responde manualmente 50-80 mensajes al día con las mismas preguntas',
+      'Clientes que escriben de noche o fines de semana nunca reciben respuesta',
     ],
   },
 
   // Comparison Section
   comparison: {
-    title: 'Deja de perder tiempo y dinero con',
-    titleHighlight: 'respuestas manuales',
+    title: 'Deja de perder ventas con',
+    titleHighlight: 'soporte manual',
     manual: {
       title: 'WhatsApp Manual',
       responseTime: { metric: 'Tiempo de respuesta', value: '1-48 horas' },
       availability: { metric: 'Disponibilidad', value: 'Solo horario laboral' },
       monthlyCost: { metric: 'Costo mensual', value: '$5,000-12,000 (salario)' },
-      lostLeads: { metric: 'Leads perdidos', value: '40-60% (respuestas lentas)' },
+      lostLeads: { metric: 'Ventas perdidas', value: '40-60% (respuestas lentas)' },
     },
     automated: {
       title: 'WhatsApp Automatizado',
       responseTime: { metric: 'Tiempo de respuesta', value: 'Instantáneo (<1 seg)' },
       availability: { metric: 'Disponibilidad', value: '24/7 incluso fines de semana' },
       monthlyCost: { metric: 'Costo mensual', value: 'Desde $299 USD/mes' },
-      lostLeads: { metric: 'Leads perdidos', value: 'Responde cada mensaje al instante' },
+      lostLeads: { metric: 'Ventas perdidas', value: 'Cada mensaje respondido al instante' },
     },
-    savingsBanner: 'Ahorra miles al mes vs contratar personal',
+    savingsBanner: 'Ahorra miles al mes vs contratar personal de soporte',
   },
 
   // Benefits Section
   benefits: {
-    title: 'Más ingresos.',
-    titleHighlight: 'Menos estrés.',
-    subtitle: 'Nosotros manejamos tu WhatsApp para que tú te enfoques en cerrar ventas y crecer tu negocio.',
+    title: 'Más ventas.',
+    titleHighlight: 'Menos caos.',
+    subtitle: 'Nosotros manejamos tu WhatsApp para que tú te enfoques en crecer tu tienda.',
     items: [
+      {
+        title: 'Recupera carritos abandonados',
+        description: 'El bot detecta carritos sin pagar y envía un mensaje automático con recordatorio. Recupera el 10-15% de ventas que de otro modo perderías.',
+      },
       {
         title: 'Gana dinero mientras duermes',
         description: 'Tu bot responde a las 2am, fines de semana, feriados. Cada mensaje se contesta. Cada lead se captura.',
       },
       {
-        title: 'Llena tu agenda más rápido',
-        description: 'Los clientes agendan citas directo en el chat. Sin llamadas, sin ping-pong de mensajes.',
+        title: 'Actualiza pedidos automáticamente',
+        description: 'Confirma órdenes, envía número de tracking y notifica cuando llegue el paquete — sin que tú hagas nada.',
       },
       {
-        title: 'Solo habla con compradores serios',
-        description: 'El bot filtra curiosos y te pasa solo los leads listos para comprar. Ahorra horas cada semana.',
+        title: 'Responde preguntas de productos al instante',
+        description: 'Tallas, colores, disponibilidad, tiempos de envío. El bot responde en segundos las preguntas más frecuentes de tu tienda.',
       },
       {
-        title: 'Convierte clicks en conversaciones',
-        description: 'Tus anuncios de Google y Meta van directo a WhatsApp. Los leads empiezan a chatear al instante.',
+        title: 'Convierte clicks en ventas',
+        description: 'Tus anuncios de Google y Meta van directo a WhatsApp. Los clientes empiezan a chatear — y el bot los lleva al checkout.',
       },
       {
-        title: 'Recupera clientes antiguos',
-        description: 'Campañas automáticas para re-enganchar a clientes que no han vuelto. Convierte tu lista en dinero.',
-      },
-      {
-        title: 'Reduce las citas perdidas',
-        description: 'Recordatorios automáticos antes de cada cita. Tus clientes llegan, tu calendario se mantiene lleno.',
+        title: 'Gestiona devoluciones sin fricción',
+        description: 'El bot guía al cliente en el proceso de devolución o cambio, recopila la info necesaria y crea el ticket automáticamente.',
       },
     ],
   },
@@ -135,56 +135,56 @@ export const es = {
     titleEnd: 'es empezar',
     steps: [
       {
-        title: 'Analizamos tu negocio',
-        description: 'Revisamos tus mensajes actuales y definimos qué quieres automatizar: citas, reservas, ventas, soporte...',
+        title: 'Analizamos tu tienda',
+        description: 'Revisamos tus mensajes actuales y definimos qué automatizar: soporte, seguimiento de pedidos, recuperación de carritos, preguntas de productos...',
       },
       {
         title: 'Diseñamos tus flujos',
-        description: 'Creamos los mensajes automáticos y la lógica de conversación adaptada a tu negocio.',
+        description: 'Creamos los mensajes automáticos y la lógica de conversación adaptada a tu catálogo y proceso de ventas.',
       },
       {
-        title: 'Configuramos todo',
-        description: 'Conectamos WhatsApp Business, probamos con casos reales y ajustamos hasta que quede perfecto.',
+        title: 'Conectamos tu tienda',
+        description: 'Integramos WhatsApp con tu plataforma (Shopify, WooCommerce, etc.), probamos con casos reales y ajustamos hasta que funcione perfecto.',
       },
       {
         title: 'Tú solo cierras ventas',
-        description: 'El bot atiende las consultas repetitivas. Tú solo intervienes en los casos importantes.',
+        description: 'El bot atiende soporte, hace seguimiento de pedidos y recupera carritos. Tú solo intervienes en los casos que lo requieren.',
       },
     ],
     readyNote: 'Todo el proceso puede estar listo en pocos días',
-    cta: 'Quiero ver cómo funciona en mi negocio',
+    cta: 'Quiero ver cómo funciona en mi tienda',
   },
 
   // Use Cases
   useCases: {
-    title: 'Ejemplos de lo que tu WhatsApp',
-    titleHighlight: 'puede hacer solo',
+    title: 'Ejemplos de lo que tu tienda',
+    titleHighlight: 'puede hacer sola',
     categories: [
       {
-        title: 'Salones y Clínicas',
+        title: 'Recuperación de Ventas',
         features: [
-          'Confirmar y recordar citas automáticamente',
-          'Enviar indicaciones previas a la cita',
-          'Reprogramar citas con un par de mensajes',
-          'Enviar promociones a clientes frecuentes',
+          'Mensaje automático a carritos abandonados con descuento',
+          'Seguimiento a clientes que cotizaron y no compraron',
+          'Re-engagement de clientes inactivos con ofertas',
+          'Notificación de restock a clientes en lista de espera',
         ],
       },
       {
-        title: 'Restaurantes',
+        title: 'Post-Compra y Soporte',
         features: [
-          'Confirmar reservas y enviar ubicación',
-          'Enviar menú y promociones del día',
-          'Recordar la reserva horas antes',
-          'Tomar pedidos para delivery',
+          'Confirmación de pedido con resumen y total',
+          'Envío automático de número de tracking',
+          'Notificación cuando el paquete está en camino',
+          'Gestión de devoluciones y cambios paso a paso',
         ],
       },
       {
-        title: 'Ventas y Soporte',
+        title: 'Atención al Cliente',
         features: [
-          'Responder preguntas sobre productos y precios',
-          'Dar seguimiento a cotizaciones pendientes',
-          'Abrir tickets de soporte',
-          'Derivar casos complejos al equipo',
+          'Responder preguntas sobre tallas, colores y disponibilidad',
+          'Informar tiempos y costos de envío por zona',
+          'Resolver dudas sobre métodos de pago',
+          'Derivar casos complejos a tu equipo',
         ],
       },
     ],
@@ -192,24 +192,24 @@ export const es = {
 
   // Testimonials
   testimonials: {
-    title: 'Lo que dicen negocios',
-    titleHighlight: 'como el tuyo',
-    subtitle: 'Mira cómo la automatización está transformando sus resultados',
+    title: 'Lo que dicen tiendas',
+    titleHighlight: 'como la tuya',
+    subtitle: 'Mira cómo la automatización está transformando sus ventas',
     reviews: [
       {
-        quote: 'Ahora el 80% de los mensajes se responde en automático y solo atendemos los casos importantes. Ganamos al menos 3 horas diarias.',
-        author: 'María González',
-        business: 'Salón de Belleza "Glamour"',
+        quote: 'Recuperamos el 12% de carritos abandonados en el primer mes. El bot manda el mensaje perfecto en el momento exacto. Eso es ingreso puro que antes perdíamos.',
+        author: 'Sofía Reyes',
+        business: 'Tienda de Ropa "Moda Única"',
       },
       {
-        quote: 'Dejamos de perder reservas por responder tarde. El bot contesta siempre, aunque estemos a full con el servicio.',
-        author: 'Carlos Méndez',
-        business: 'Restaurante "La Esquina"',
+        quote: 'Antes pasábamos 3 horas al día respondiendo WhatsApp. Ahora el bot maneja el 85% de los mensajes y nosotros solo vemos los casos importantes.',
+        author: 'Diego Morales',
+        business: 'Tienda de Electrónica "TechStore"',
       },
       {
-        quote: 'En la primera semana el bot agendó 42 citas nuevas sin que yo tocara el teléfono. Increíble.',
-        author: 'Ana Ruiz',
-        business: 'Clínica Dental "Sonrisa"',
+        quote: 'Los clientes preguntan por tracking, tallas y devoluciones todo el día. Ahora el bot los atiende al instante y las reseñas de servicio al cliente subieron de 3.2 a 4.8 estrellas.',
+        author: 'Valentina Cruz',
+        business: 'Accesorios "Luxe Shop"',
       },
     ],
     googleReview: 'en Google',
@@ -219,43 +219,43 @@ export const es = {
   faq: {
     title: 'Preguntas',
     titleHighlight: 'frecuentes',
-    subtitle: 'Todo lo que necesitas saber sobre AutoWhats',
+    subtitle: 'Todo lo que necesitas saber sobre AutoWhats para tu tienda online',
     items: [
       {
         question: '¿Qué es AutoWhats?',
-        answer: 'AutoWhats es un servicio que crea y configura un chatbot inteligente para tu WhatsApp Business. Nosotros nos encargamos de todo: la conexión con la API oficial de WhatsApp, la inteligencia artificial (GPT-4), y el mantenimiento continuo. Tu solo proporcionas información sobre tu negocio.',
+        answer: 'AutoWhats es un servicio que crea y configura un chatbot inteligente para tu WhatsApp Business. Nos encargamos de todo: la conexión con la API oficial de WhatsApp, la inteligencia artificial, y el mantenimiento continuo. Tú solo nos dices cómo funciona tu tienda.',
       },
       {
         question: '¿Cuánto cuesta el servicio?',
-        answer: 'Los planes comienzan desde $299 USD al mes. El precio incluye la API de WhatsApp Business, el modelo de IA GPT-4, configuración inicial, y soporte técnico. Ofrecemos una demo gratuita para que veas cómo funciona antes de decidir.',
+        answer: 'Los planes comienzan desde $299 USD al mes. El precio incluye la API de WhatsApp Business, el modelo de IA GPT-4, configuración inicial y soporte técnico. Ofrecemos una demo gratuita para que veas cómo funciona antes de decidir.',
+      },
+      {
+        question: '¿Se integra con Shopify o WooCommerce?',
+        answer: 'Sí. Podemos conectar AutoWhats con tu plataforma de e-commerce para que el bot tenga acceso al estado de pedidos, inventario y datos del cliente en tiempo real. Esto permite responder preguntas de tracking, disponibilidad y más de forma automática.',
+      },
+      {
+        question: '¿Cómo funciona la recuperación de carritos abandonados?',
+        answer: 'Cuando un cliente deja productos en el carrito sin comprar, el bot le envía un mensaje personalizado por WhatsApp recordándole los productos y opcionalmente ofreciendo un descuento. El timing y el mensaje se configura según tu estrategia.',
       },
       {
         question: '¿Cuánto tiempo toma tener mi bot funcionando?',
-        answer: 'Entre 24 y 48 horas. Una vez que nos proporcionas la información de tu negocio (servicios, precios, horarios, preguntas frecuentes), configuramos todo y lo dejamos listo para atender a tus clientes.',
+        answer: 'Entre 24 y 48 horas. Una vez que nos proporcionas la información de tu tienda (catálogo, políticas de envío, FAQs), configuramos todo y lo dejamos listo para atender a tus clientes.',
       },
       {
         question: '¿Necesito saber programar?',
-        answer: 'No. AutoWhats es un servicio completamente administrado. Nosotros nos encargamos de toda la parte técnica. Tu solo necesitas decirnos cómo funciona tu negocio y qué tipo de respuestas quieres que dé el bot.',
+        answer: 'No. AutoWhats es un servicio completamente administrado. Nosotros manejamos toda la parte técnica. Tú solo necesitas decirnos cómo funciona tu negocio y qué tipo de respuestas quieres que dé el bot.',
       },
       {
-        question: '¿Para qué tipo de negocios funciona?',
-        answer: 'AutoWhats funciona para cualquier negocio que reciba consultas por WhatsApp: salones de belleza, clínicas médicas y dentales, restaurantes, gimnasios, inmobiliarias, tiendas online, escuelas, servicios profesionales, y más.',
-      },
-      {
-        question: '¿El bot puede agendar citas automáticamente?',
-        answer: 'Sí. El bot se integra con Google Calendar para mostrar tu disponibilidad real y confirmar citas sin intervención humana. También puede enviar recordatorios automáticos antes de cada cita.',
+        question: '¿El bot puede manejar devoluciones?',
+        answer: 'Sí. El bot puede guiar al cliente paso a paso en el proceso de devolución, recopilar la información necesaria (número de pedido, motivo, fotos del producto) y crear un ticket automático para que tu equipo lo procese.',
       },
       {
         question: '¿Qué pasa si un cliente necesita hablar con un humano?',
-        answer: 'El bot detecta automáticamente cuando es necesario transferir la conversación a una persona real. Te notifica por WhatsApp y puedes tomar el control de la conversación en cualquier momento.',
+        answer: 'El bot detecta automáticamente cuándo es necesario transferir la conversación a una persona real. Te notifica por WhatsApp y puedes tomar el control de la conversación en cualquier momento.',
       },
       {
         question: '¿El bot entiende audios e imágenes?',
-        answer: 'Sí. Utilizamos GPT-4 Vision para entender imágenes y Whisper para transcribir mensajes de voz. Tu bot puede recibir fotos de referencia o notas de voz y responder apropiadamente.',
-      },
-      {
-        question: '¿Es legal usar un bot en WhatsApp?',
-        answer: 'Sí, siempre que uses la API oficial de WhatsApp Business. AutoWhats utiliza la API oficial, lo que garantiza que tu cuenta esté completamente segura y cumpla con los términos de servicio.',
+        answer: 'Sí. Utilizamos GPT-4 Vision para entender imágenes (por ejemplo, fotos de un producto defectuoso) y Whisper para transcribir mensajes de voz. Ideal para gestionar quejas o consultas con contexto visual.',
       },
       {
         question: '¿Ofrecen garantía?',
@@ -268,13 +268,13 @@ export const es = {
   pricing: {
     title: 'Qué incluye el plan de',
     titleHighlight: '$299/mes',
-    subtitle: 'Todo lo que necesitas para automatizar tu WhatsApp Business',
+    subtitle: 'Todo lo que necesitas para automatizar el WhatsApp de tu tienda',
     features: [
-      { title: 'Flujos de conversación', description: 'FAQ + citas + derivación a asesor' },
-      { title: 'Integración con Google Calendar', description: 'Agendamiento automático de citas' },
-      { title: 'Entrenamiento personalizado', description: 'Configurado con info de tu negocio' },
-      { title: 'Ajustes mensuales', description: 'Modificaciones incluidas cada mes' },
-      { title: 'Implementación rápida', description: '3-7 días para estar en producción' },
+      { title: 'Recuperación de carritos abandonados', description: 'Mensajes automáticos con timing personalizado' },
+      { title: 'Seguimiento de pedidos automático', description: 'Confirmación + tracking + notificación de entrega' },
+      { title: 'Soporte de clientes 24/7', description: 'FAQ, tallas, envíos, devoluciones automatizadas' },
+      { title: 'Integración con tu plataforma', description: 'Shopify, WooCommerce y más' },
+      { title: 'Entrenamiento personalizado', description: 'Configurado con tu catálogo y políticas' },
       { title: 'Soporte por WhatsApp', description: 'Ayuda cuando la necesites' },
     ],
     price: '$299',
@@ -284,9 +284,9 @@ export const es = {
 
   // Final CTA
   finalCta: {
-    title: '¿Listo para dejar de perder clientes por WhatsApp?',
-    subtitle: 'Agenda una conversación rápida y te mostramos cómo automatizar los mensajes de tu negocio sin complicaciones.',
-    disclaimer: 'Sin compromiso. Solo vemos si la automatización tiene sentido para tu negocio.',
+    title: '¿Listo para recuperar ventas que hoy estás perdiendo?',
+    subtitle: 'Agenda una conversación rápida y te mostramos cómo AutoWhats puede funcionar en tu tienda en menos de 48 horas.',
+    disclaimer: 'Sin compromiso. Solo vemos si la automatización tiene sentido para tu tienda.',
   },
 
   // Footer
