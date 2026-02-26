@@ -7,6 +7,24 @@ import { ServicioForm } from '@/components/admin/ServicioForm';
 import { ConfirmDialog } from '@/components/admin/ConfirmDialog';
 import type { Servicio } from '@/lib/types/admin';
 
+const DIAS_LABELS: Record<number, string> = {
+  1: 'Lun', 2: 'Mar', 3: 'Mie', 4: 'Jue', 5: 'Vie', 6: 'Sab', 7: 'Dom',
+};
+
+function formatHorario(horario?: string): string {
+  if (!horario) return '—';
+  try {
+    const h = JSON.parse(horario);
+    if (!h.dias?.length) return '—';
+    const dias = (h.dias as number[]).map(d => DIAS_LABELS[d] || '').join(', ');
+    const inicio = h.hora_inicio?.slice(0, 5) || '';
+    const fin = h.hora_fin?.slice(0, 5) || '';
+    return `${dias} / ${inicio} - ${fin}`;
+  } catch {
+    return horario;
+  }
+}
+
 export default function ServiciosPage() {
   const [servicios, setServicios] = useState<Servicio[]>([]);
   const [loading, setLoading] = useState(true);
@@ -133,7 +151,7 @@ export default function ServiciosPage() {
                     </td>
                     <td className="px-6 py-4 text-gray-900">${servicio.precio}</td>
                     <td className="px-6 py-4 text-gray-600">{servicio.duracion_minutos} min</td>
-                    <td className="px-6 py-4 text-gray-600 text-sm">{servicio.horario || '—'}</td>
+                    <td className="px-6 py-4 text-gray-600 text-sm">{formatHorario(servicio.horario)}</td>
                     <td className="px-6 py-4">
                       <span className={`px-2.5 py-1 text-xs font-medium rounded-lg ${
                         servicio.activo
@@ -172,7 +190,7 @@ export default function ServiciosPage() {
                 <div className="flex items-start justify-between mb-3">
                   <div>
                     <p className="text-gray-900 font-medium">{servicio.nombre}</p>
-                    <p className="text-gray-500 text-xs mt-0.5">{servicio.horario || servicio.categoria}</p>
+                    <p className="text-gray-500 text-xs mt-0.5">{formatHorario(servicio.horario) !== '—' ? formatHorario(servicio.horario) : servicio.categoria}</p>
                   </div>
                   <span className={`px-2 py-0.5 text-xs rounded-lg ${
                     servicio.activo

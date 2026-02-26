@@ -3,7 +3,36 @@
 import { useState, useEffect, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Save, Loader2 } from 'lucide-react';
-import type { Servicio } from '@/lib/types/admin';
+import type { Servicio, HorarioEstructurado } from '@/lib/types/admin';
+
+const DIAS_SEMANA = [
+  { value: 1, label: 'Lun' },
+  { value: 2, label: 'Mar' },
+  { value: 3, label: 'Mie' },
+  { value: 4, label: 'Jue' },
+  { value: 5, label: 'Vie' },
+  { value: 6, label: 'Sab' },
+  { value: 7, label: 'Dom' },
+];
+
+const HORAS = Array.from({ length: 14 }, (_, i) => {
+  const h = i + 7;
+  return `${h.toString().padStart(2, '0')}:00`;
+});
+
+function parseHorario(horario?: string): HorarioEstructurado {
+  if (horario) {
+    try {
+      const parsed = JSON.parse(horario);
+      if (parsed.dias && parsed.hora_inicio && parsed.hora_fin) return parsed;
+    } catch { /* not JSON, use defaults */ }
+  }
+  return { dias: [], hora_inicio: '09:00', hora_fin: '18:00' };
+}
+
+function toggleDia(dias: number[], dia: number): number[] {
+  return dias.includes(dia) ? dias.filter(d => d !== dia) : [...dias, dia].sort();
+}
 
 interface ServicioFormProps {
   open: boolean;
@@ -19,7 +48,7 @@ const emptyServicio: Servicio = {
   duracion_minutos: 0,
   categoria: 'manicure',
   activo: true,
-  horario: '',
+  horario: JSON.stringify({ dias: [], hora_inicio: '09:00', hora_fin: '18:00' }),
 };
 
 export function ServicioForm({ open, servicio, onSave, onClose }: ServicioFormProps) {
@@ -137,14 +166,59 @@ export function ServicioForm({ open, servicio, onSave, onClose }: ServicioFormPr
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">Horario</label>
-                  <input
-                    type="text"
-                    value={form.horario || ''}
-                    onChange={(e) => setForm({ ...form, horario: e.target.value })}
-                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder="Ej: Martes a Jueves, 8am a 6pm"
-                  />
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">Dias de atencion</label>
+                  <div className="flex flex-wrap gap-2">
+                    {DIAS_SEMANA.map(({ value, label }) => {
+                      const horario = parseHorario(form.horario);
+                      const selected = horario.dias.includes(value);
+                      return (
+                        <button
+                          key={value}
+                          type="button"
+                          onClick={() => {
+                            const h = parseHorario(form.horario);
+                            setForm({ ...form, horario: JSON.stringify({ ...h, dias: toggleDia(h.dias, value) }) });
+                          }}
+                          className={`px-3 py-2 text-sm font-medium rounded-lg border transition-all ${
+                            selected
+                              ? 'bg-primary-500 text-white border-primary-500'
+                              : 'bg-white text-gray-600 border-gray-300 hover:border-primary-300'
+                          }`}
+                        >
+                          {label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Hora inicio</label>
+                    <select
+                      value={parseHorario(form.horario).hora_inicio}
+                      onChange={(e) => {
+                        const h = parseHorario(form.horario);
+                        setForm({ ...form, horario: JSON.stringify({ ...h, hora_inicio: e.target.value }) });
+                      }}
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    >
+                      {HORAS.map(h => <option key={h} value={h}>{h}</option>)}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Hora fin</label>
+                    <select
+                      value={parseHorario(form.horario).hora_fin}
+                      onChange={(e) => {
+                        const h = parseHorario(form.horario);
+                        setForm({ ...form, horario: JSON.stringify({ ...h, hora_fin: e.target.value }) });
+                      }}
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    >
+                      {HORAS.map(h => <option key={h} value={h}>{h}</option>)}
+                    </select>
+                  </div>
                 </div>
 
                 <div className="flex items-center gap-3">

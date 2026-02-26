@@ -1,3 +1,9 @@
+export interface HorarioEstructurado {
+  dias: number[];       // 1=Lun, 2=Mar, ..., 7=Dom
+  hora_inicio: string;  // "09:00"
+  hora_fin: string;     // "18:00"
+}
+
 export interface Servicio {
   id?: string;
   nombre: string;

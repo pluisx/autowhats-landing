@@ -1,6 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerSupabase } from '@/lib/supabase';
 import type { Servicio } from '@/lib/types/admin';
+import type { HorarioEstructurado } from '@/lib/types/admin';
+
+function parseHorarioJSON(horario?: string | null): HorarioEstructurado | null {
+  if (!horario) return null;
+  try {
+    const parsed = JSON.parse(horario);
+    if (parsed.dias?.length && parsed.hora_inicio && parsed.hora_fin) return parsed;
+  } catch { /* not structured JSON */ }
+  return null;
+}
+
+async function generarDisponibilidadSiAplica(
+  supabase: ReturnType<typeof createServerSupabase>,
+  horario?: string | null
+) {
+  const h = parseHorarioJSON(horario);
+  if (!h) return;
+  await supabase.rpc('generar_disponibilidad', {
+    p_dias: h.dias,
+    p_hora_inicio: h.hora_inicio,
+    p_hora_fin: h.hora_fin,
+    p_semanas: 4,
+  });
+}
 
 export async function GET() {
   const supabase = createServerSupabase();
@@ -39,6 +63,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 });
   }
 
+  await generarDisponibilidadSiAplica(supabase, body.horario);
+
   return NextResponse.json(data, { status: 201 });
 }
 
@@ -68,6 +94,8 @@ export async function PUT(request: NextRequest) {
   if (error) {
     return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 });
   }
+
+  await generarDisponibilidadSiAplica(supabase, body.horario);
 
   return NextResponse.json(data);
 }
